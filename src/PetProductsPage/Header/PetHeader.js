@@ -1,12 +1,15 @@
 import React from 'react'
-import 'PetHeader.css'
+import '../Header/PetHeader.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch} from '@fortawesome/free-solid-svg-icons'
 
 const PetHeader = () => {
   return (
     <div>
-        <h1>HAVE A PUPPY DAY</h1>
+        <h1 className='Pet-title'>HAVE A PUPPY DAY</h1>
         <from>
             <input type='text' placeholder='용품검색...'></input>
+            <FontAwesomeIcon icon={faSearch }/>
         </from>
     </div>
   )
