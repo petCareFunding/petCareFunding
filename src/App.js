@@ -1,11 +1,14 @@
 import './App.css';
 import React from 'react';
+import SchoolMain from './School/SchoolMain.js';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <SchoolMain/>
     </div>
+   
+    
   );
 }
 
