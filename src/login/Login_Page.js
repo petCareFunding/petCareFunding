@@ -1,4 +1,4 @@
-import "../Login_Page.css";
+import "./Login_Page.css";
 
 
 const Login_Page=()=>{
