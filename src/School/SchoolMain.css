@@ -1,0 +1,25 @@
+body{
+    /* display: flex; */
+    min-height: 1000vh;
+}
+
+
+.title{
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 30PX;
+    color: #FFEEAE;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.search{
+    border-radius: 500px;
+    border: solid 1px;
+    width: 500px;
+    height: 25px;
+}
