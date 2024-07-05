@@ -1,0 +1,58 @@
+.image-zigzag {
+  width: 100%;
+  margin-top: 60px;
+}
+.image-zigzag img {
+  border-radius: 20px;
+}
+.item:first-child {
+  width: 100%;
+}
+.item:first-child img {
+  float: left;
+}
+.item:first-child .item-detail {
+  width: 620px;
+  text-align: left;
+  margin-left: 30px;
+
+}
+.item-detail .item-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.item:nth-child(2) {
+  width: 100%;
+  position: relative;
+  top: 300px;
+}
+.item:nth-child(2) img {
+  float: right;
+}
+.item:nth-child(2) .item-detail {
+  width: 400px;
+  text-align: left;
+  float: right;
+  margin-right: 30px;
+  position: relative;
+  right: 20px;
+}
+.item:nth-child(3) {
+  width: 100%;
+  position: relative;
+  top: 550px;
+}
+.item:nth-child(3) img {
+  float: left;
+}
+.item:nth-child(3) .item-detail {
+  width: 500px;
+  margin-left: 30px;
+  text-align: left;
+  position: relative;
+  bottom: 70px;
+}
+.item-detail {
+  width: 100%;
+  float: left;
+}

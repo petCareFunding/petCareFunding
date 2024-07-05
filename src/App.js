@@ -1,12 +1,12 @@
-import './App.css';
-import React from 'react';
-import PetItemspage from './PetProductsPage/PetItemsPage/PetItemspage';
-import { Routes, Route,Link } from 'react-router-dom';
+import "./App.css";
+import React from "react";
+import ItemsPage from "./PetProductsPage/PetItemspage/ItemsPage";
+//import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <PetItemspage/>
+      <ItemsPage />
     </div>
   );
 }
