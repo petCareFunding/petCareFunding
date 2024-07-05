@@ -1,12 +1,12 @@
 import './App.css';
 import React from 'react';
-import PetItemspage from './PetProductsPage/PetItemsPage/PetItemspage';
+import Main from './MainPage/Main';
 import { Routes, Route,Link } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <PetItemspage/>
+      <Main />
     </div>
   );
 }
