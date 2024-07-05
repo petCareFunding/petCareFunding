@@ -3,10 +3,6 @@ import './MyPage.css';
 
 const MyPage = () => {
   return (
-    <div className="my-page">
-      <header className="header">
-        <h1>MEONG-GORITHM</h1>
-      </header>
       <main className="main-content">
         <h2>MY PAGE</h2>
         <div className="options">
@@ -28,7 +24,6 @@ const MyPage = () => {
           <button className="quit-btn">탈퇴하기</button>
         </div>
       </main>
-    </div>
   );
 };
 
