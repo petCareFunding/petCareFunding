@@ -8,12 +8,11 @@ function SchoolMain(){
             <header className="title">MEONG-GORITHM</header>
             <div className="search-container">
                 <input type="text" className="search" placeholder="동네 검색하기.."/>
-                <img src="" alt="돋보기아이콘" className="searchbtn"></img>
+                <img src={process.env.PUBLIC_URL + './ion_search.png'} alt="돋보기아이콘" className="searchbtn"></img>
             </div>
             <hr/>
-
             <div className="container">
-
+                
             </div>
         </div>
     )

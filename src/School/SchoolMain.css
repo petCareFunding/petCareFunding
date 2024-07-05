@@ -22,4 +22,11 @@ body{
     border: solid 1px;
     width: 500px;
     height: 25px;
+    padding-left: 10px;
+}
+
+.searchbtn{
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
 }
