@@ -1,5 +1,6 @@
 import "./Login_Page.css";
-
+import { RiKakaoTalkFill } from "react-icons/ri";
+import { SiNaver } from "react-icons/si";
 
 const Login_Page=()=>{
 
@@ -22,16 +23,18 @@ const Login_Page=()=>{
                         <input type="submit" value="로그인" />
                     </div>
                     <div className="or">또는</div>
+                    <div className="kakao-img"><RiKakaoTalkFill size="35px"/></div>
                     <div className="kakao_button">
-                        <a href="#"><input type="submit" value="카카오 로그인" /></a>
+                    <a href="#"><input type="submit" value="카카오 로그인" /></a>
                     </div>
+                    <div className="naver-img"><SiNaver size="29px"/></div>
                     <div className="naver_button">
                         <a href="#"><input type="submit" value="네이버 로그인" /></a>
                     </div>
-                    <div className="join">
-                        <div>회원이 아니시라면?</div>
-                        <a href="#"><div>회원가입</div></a>
-                    </div>
+                    
+                    <div className="join_q">회원이 아니시라면?</div>
+                    <div className="join"><a href="#">회원가입</a></div>
+                    
 
                 </div>
                 
