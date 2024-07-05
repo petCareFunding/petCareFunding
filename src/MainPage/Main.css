@@ -1,8 +1,9 @@
 .mainContainer h1 {
     color: #FBE99F;
-    margin-top: 100px;
-    margin-bottom: 30px;
+    padding-top: 100px;
+    padding-bottom: 30px;
     font-size: 50px;
+    margin: 0px;
 }
 
 .mainContainer ul {
@@ -27,9 +28,10 @@
 }
 
 .mainContainer .navSecond ul {
-    padding: 0px;
+    margin: 0px;
     margin-left: 80px;
     margin-right: 80px;
+    padding-bottom: 325px;
 }
 .mainContainer .navFirst a {
     color: #5b5b5b;
@@ -37,7 +39,7 @@
 .mainContainer .navSecond a {
    color: white;
 }
-body {
+body .mainContainer {
     background-image: url(https://jellypetsalon.com/content/images/size/w1000/2023/06/vitalii-khodzinskyi-Hju091vRz_Q-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
