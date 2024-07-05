@@ -11,15 +11,15 @@ const MyPage = () => {
         <h2>MY PAGE</h2>
         <div className="options">
           <div className="option">
-            <img src="/path/to/pending-icon.png" alt="Pending Icon" />
+            <img src="" alt="" />
             <p>펀딩 내역</p>
           </div>
           <div className="option">
-            <img src="/path/to/thumbs-up-icon.png" alt="Thumbs Up Icon" />
+            <img src="" alt="" />
             <p>내 찜 목록</p>
           </div>
           <div className="option">
-            <img src="/path/to/user-icon.png" alt="User Icon" />
+            <img src="" alt="" />
             <p>회원 정보 수정</p>
           </div>
         </div>
