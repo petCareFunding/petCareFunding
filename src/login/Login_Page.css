@@ -70,7 +70,8 @@
     border-radius: 10px;
     border: none;
     background-color: #FBE99F;
-    
+    font-size: 20px;
+    font-weight: bold;
 }
 .kakao_button input{
     margin-top: 55px;
@@ -79,7 +80,8 @@
     border-radius: 10px;
     border: none;
     background-color: #FEE500;
-    
+    font-size: 20px;
+    font-weight: bold;
 }
 .naver_button input{
     margin-top: 25px;
@@ -88,5 +90,8 @@
     border-radius: 10px;
     border: none;
     background-color: #03C75A;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
     
 }
