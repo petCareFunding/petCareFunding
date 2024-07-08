@@ -1,0 +1,31 @@
+.item-wrapper{width: 100%;}
+.item-detail{
+    width: 100%;
+    display: flex;
+    margin: 40px auto;
+}
+.item-detail img{width: 40%; margin-left: 50px; border-radius: 20px;}
+.item-txt{
+    width: 50%;
+    margin-left: 20px;
+    text-align: center;
+    padding: 100px;
+}
+.item-txt .Supplies{
+    font-size: 25px;
+    font-weight: bold;
+}
+.item-txt .Funding-progress {
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Lemon;
+}
+.item-txt span{margin-right: 20px; margin-bottom: 30px;}
+.item-txt .funding-pepole{
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
