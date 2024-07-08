@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 function SchoolPost(){
     var [show,setShow] = useState(false);
+    const [photoURL, setPhotoURL] = useState('');
     const showAlert = ()=>{
         const uploadPhoto = document.querySelector('#uploadPhoto').value;
         const title = document.querySelector('#title').value;
@@ -28,10 +29,11 @@ function SchoolPost(){
             <div className='photo-container'>
                 {/* <h3>사진</h3> */}
                 <div className='upload-container'>
-                    <label className='photo-fill-btn' for = 'uploadPhoto'>
+                    <label className='photo-fill-btn' htmlFor = 'uploadPhoto'>
                       사진 업로드
                     </label>
-                    <input type='file' accept='image/*' id='uploadPhoto' style={{display:'none'}}/>             
+                    <input type='file' accept='.png, .jpeg, .jpg' id='uploadPhoto' style={{display:'none'}} required/> 
+                    <div className='selected'></div>           
                 </div>
             </div>
             <div id='title-container'>
