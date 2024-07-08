@@ -14,12 +14,12 @@ body .schoolmain{
     cursor: pointer;
 }
 
-.local-search{
+.local-search-container{
     display: flex;
     align-items: center;
     justify-content: center;  
 }
-.search{
+.local-search{
     border-radius: 500px;
     border: solid 1px;
     width: 500px;
