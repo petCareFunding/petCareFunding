@@ -26,11 +26,12 @@ function SchoolPost(){
     return(
         <div className='container'>
             <div className='photo-container'>
-                <h3>사진</h3>
+                {/* <h3>사진</h3> */}
                 <div className='upload-container'>
-                    <label className="custom-file-upload">
-                        <input type='file' accept='image/*' id='uploadPhoto' placeholder='업로드하려면 클릭'></input>
-                    </label>                
+                    <label className='photo-fill-btn' for = 'uploadPhoto'>
+                      사진 업로드
+                    </label>
+                    <input type='file' accept='image/*' id='uploadPhoto' style={{display:'none'}}/>             
                 </div>
             </div>
             <div id='title-container'>
