@@ -19,7 +19,7 @@ function SchoolMain(){
     const navigate = useNavigate();
     const Gopostpage = ()=>{navigate('/school/postSchoolFunding')};
     return(
-        <div>
+        <div className="schoolmain">
             <header className="title">MEONG-GORITHM</header>
             <div className="search-container">
                 <input type="text" className="search" placeholder="지역 검색하기.."/>
