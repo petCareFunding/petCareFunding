@@ -14,7 +14,7 @@ body .schoolmain{
     cursor: pointer;
 }
 
-.search-container{
+.local-search{
     display: flex;
     align-items: center;
     justify-content: center;  

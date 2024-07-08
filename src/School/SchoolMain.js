@@ -21,7 +21,7 @@ function SchoolMain(){
     return(
         <div className="schoolmain">
             <header className="title">MEONG-GORITHM</header>
-            <div className="search-container">
+            <div className="local-search">
                 <input type="text" className="search" placeholder="지역 검색하기.."/>
                 <img src={process.env.PUBLIC_URL + './ion_search.png'} alt="돋보기아이콘" className="searchbtn"></img>
             </div>
