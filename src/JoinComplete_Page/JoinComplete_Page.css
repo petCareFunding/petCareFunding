@@ -1,0 +1,25 @@
+.moveMain{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 90px;
+    background-color: #FBE99F;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.moveFunding{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 70px;
+    background-color: #FCDADA;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
