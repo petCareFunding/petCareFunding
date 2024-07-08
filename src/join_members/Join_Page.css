@@ -12,15 +12,15 @@
     border: none;
     
 }
-.join{
+.join_Title{
     position: absolute;
-    top: 15px;
+    top: 50px;
     left: 84px;
     font-size: 30px;
     
     
 }
-.email{
+.j_email{
     position: absolute;
     top: 165px;
     left: 90px;
@@ -33,14 +33,14 @@
     left: 90px;
     font-size: 14px;
 }
-.password{
+.joinPassword{
     position: absolute;
     top: 355px;
     left: 90px;
     font-size: 14px;
     
 }
-.passwordCheck{
+.joinpasswordCheck{
     position: absolute;
     top: 450px;
     left: 90px;
@@ -65,7 +65,7 @@
 
 
 
-.Email_input input{
+.joinEmail_input input{
     position: absolute;
     border-radius: 10px;
     border: 1px solid rgb(201, 201, 201);
@@ -95,7 +95,7 @@
     width:  70%;
     height: 40px;
 }
-.Password_input input{
+.joinPassword_input input{
     position: absolute;
     border-radius: 10px;
     border: 1px solid rgb(201, 201, 201);
@@ -113,7 +113,7 @@
     width:  70%;
     height: 40px;
 }
-.submit_button input{
+.joinSubmit_button input{
     margin-top: 550px;
     width:  72%;
     height: 50px;
@@ -123,12 +123,12 @@
     font-size: 20px;
     font-weight: bold;
 }
-.kakao-img{
+.join_kakao-img{
     position: absolute;
     top: 695px;
     left: 150px;
 }
-.kakao_button input{
+.joinKakao_button input{
     margin-top: 85px;
     width:  72%;
     height: 50px;
@@ -138,13 +138,13 @@
     font-size: 20px;
     font-weight: bold;
 }
-.naver-img{
+.join_naver-img{
     position: absolute;
     top: 770px;
     left: 153px;
     color: white;
 }
-.naver_button input{
+.joinNaver_button input{
     margin-top: 25px;
     width:  72%;
     height: 50px;
