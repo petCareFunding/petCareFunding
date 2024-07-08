@@ -11,6 +11,33 @@
     font-weight: bold;
 }
 
+.join_complete{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.welcome{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.guideSentence{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    
+
+}
 .moveFunding{
     position: absolute;
     top: 75%;
