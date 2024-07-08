@@ -35,7 +35,7 @@
   float: right;
   margin-right: 30px;
   position: relative;
-  right: 20px;
+  right: 20px; bottom: 100px;
 }
 .item:nth-child(3) {
   width: 100%;
@@ -43,6 +43,7 @@
   top: 550px;
 }
 .item:nth-child(3) img {
+  width: 50%;
   float: left;
 }
 .item:nth-child(3) .item-detail {
@@ -50,9 +51,39 @@
   margin-left: 30px;
   text-align: left;
   position: relative;
-  bottom: 70px;
+  top: 150px;
 }
 .item-detail {
   width: 100%;
   float: left;
+}
+.funding-title{
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #FFEEAE;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.item-funding{
+  width: 150px;
+  height: 30px;
+  font-family: Lemon;
+  font-weight: bold;
+}
+.item-funding .funding{
+ font-size: 18px; 
+font-weight: bold;
+margin-right: 20px;
+}
+.FundingPeriod{
+  width: 240px;
+  font-family: Lemon;
+  font-weight: bold;
+}
+.FundingPeriod .period{
+  font-size: 18px;
+  margin-right: 10px;
 }

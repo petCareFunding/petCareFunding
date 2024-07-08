@@ -1,13 +1,17 @@
 import "./App.css";
 import React from "react";
 import ItemsPage from "./PetProductsPage/PetItemspage/ItemsPage";
-//import { Routes, Route, Link } from "react-router-dom";
+import ItemDetail from "./PetProductsPage/ItemDetailPage/ItemDetail";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <ItemsPage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/ItemsPage" element={<ItemsPage />} />
+        <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
