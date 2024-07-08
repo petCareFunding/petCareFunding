@@ -25,7 +25,7 @@ function SchoolPost(){
     const Backschool = ()=>{navigate('/school')};
 
     return(
-        <div className='container'>
+        <div className='container schoolpost'>
             <div className='photo-container'>
                 {/* <h3>사진</h3> */}
                 <div className='upload-container'>
