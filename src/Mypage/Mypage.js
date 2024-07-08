@@ -7,15 +7,15 @@ const MyPage = () => {
         <h2>MY PAGE</h2>
         <div className="options">
           <div className="option">
-            <img src="./img/funding.png" alt="" />
+            <img src="/Mypage_img/funding.png" />
             <p>펀딩 내역</p>
           </div>
           <div className="option">
-            <img src="./img/good.png" alt="" />
+          <img src="/Mypage_img/good.png" />
             <p>내 찜 목록</p>
           </div>
           <div className="option">
-            <img src="./img/myimg.png" alt="" />
+          <img src="/Mypage_img/myimg.png" />
             <p>회원 정보 수정</p>
           </div>
         </div>
