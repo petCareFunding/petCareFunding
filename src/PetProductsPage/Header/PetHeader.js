@@ -3,16 +3,12 @@ import '../Header/PetHeader.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch} from '@fortawesome/free-solid-svg-icons'
 
-const PetHeader = () => {
-  return (
-    <div>
-        <h1 className='Pet-title'>HAVE A PUPPY DAY</h1>
-        <from>
-            <input type='text' placeholder='용품검색...'></input>
-            <FontAwesomeIcon icon={faSearch }/>
-        </from>
+export default function PetHeader(){
+  return(
+    <div className='header'>
+        <h1>HAVE A PUPPY DAY</h1>
+            <input type='text' placeholder='용품 검색'></input>
+            <FontAwesomeIcon icon={faSearch}  className='icon'/>
     </div>
   )
 }
-
-export default PetHeader
