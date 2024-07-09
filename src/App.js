@@ -6,6 +6,11 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Main from './MainPage/Main';
 import Login_Page from './login/Login_Page';
 import Join_Page from './join_members/Join_Page';
+import SchoolMain from './School/SchoolMain.js';
+import SchoolPost from './School/SchoolPost.js';
+import ItemsPage from "./PetProductsPage/PetItemsPage/ItemsPage";
+import ItemDetail from "./PetProductsPage/ItemDetailPage/ItemDetail";
+
 
 function App() {
   return (
@@ -17,6 +22,11 @@ function App() {
           <Route path="/join_members" element={<Join_Page />} />
            <Route path="/ItemsPage" element={<ItemsPage />} />
         <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
+          <Route path="/join_members" element={<Join_Page />} /> 
+          <Route path='/school' element={<SchoolMain/>}></Route>
+          <Route path='/school/postSchoolFunding' element={<SchoolPost/>}/>
+          <Route path="/ItemsPage" element={<ItemsPage />} />
+          <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
         </Routes>
       </BrowserRouter>
     </div>
