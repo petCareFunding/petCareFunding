@@ -8,7 +8,7 @@ import SchoolMain from './School/SchoolMain.js';
 import SchoolPost from './School/SchoolPost.js';
 import ItemsPage from "./PetProductsPage/PetItemsPage/ItemsPage";
 import ItemDetail from "./PetProductsPage/ItemDetailPage/ItemDetail";
-import { Routes, Route,Link, BrowserRouter } from 'react-router-dom';
+
 
 function App() {
   return (
