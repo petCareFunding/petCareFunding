@@ -15,4 +15,10 @@
     height: 25px;
     padding: 5px;
     cursor: pointer;
+    width: 100%;
+    display: flex;
+    background-color: #FFEEAE;
+    position: relative;
+ bottom: -600px;
+    justify-content: space-around;
 }
