@@ -4,8 +4,6 @@ import './Funding_payment_detai.css';
 const Funding_payment_detai = () => {
   return (
     <div className="Funding_payment_detai">
-      <h1 className="title">MEONG-GORITHM</h1>
-      <h2 className="subtitle">결제 내역</h2>
       <div className="content">
         <div className="order">
           <div className="icon">🛒</div>
