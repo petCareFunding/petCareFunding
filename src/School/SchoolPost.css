@@ -69,18 +69,24 @@
 
 .photo-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2열 */
-    grid-template-rows: repeat(2, 1fr); /* 2행 */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
     gap: 10px; 
     width: 450px;
     height: 450px; 
-    margin: 0 auto; /* 중앙 정렬 */
+    margin: 0 auto; 
     margin-top: 20px;
     margin-bottom: 40px;
 }
+
+
 
 .selectedbox{
     background-color: #FFFFFF;
 }
 
-
+/*#selected1{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}*/
