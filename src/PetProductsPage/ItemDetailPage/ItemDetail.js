@@ -110,5 +110,3 @@ function ItemDetail() {
     </div>
   );
 }
-
-export default ItemDetail;

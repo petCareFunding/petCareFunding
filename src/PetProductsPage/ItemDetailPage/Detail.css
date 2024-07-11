@@ -6,17 +6,17 @@
   grid-template-columns: 1fr 1fr;
   margin-top: 200px;
 }
-.item-detail  img{
-  width: 85%;
-  height: 600px;
+.item-detail img{
+  width: 100%;
+  height: 500px;
   border-radius: 20px;
   margin-left: 30px;
 }
 
 .item-txt {
-  width: 40%;
-    position: relative;
-    bottom: 30px; right: 100px;
+  width: 50%;
+  position: relative;
+ 
 }
 p {
   width: 400px;
@@ -34,6 +34,7 @@ span {
   text-align: center;
   line-height: 50px;
   cursor: pointer;
+  margin-left: 40px;
 }
 .button:hover{color: rgba(0, 0, 255, 0.493);}
 .detail-image{width: 50%; margin: 0 auto;}
@@ -51,10 +52,37 @@ span {
   display: block;
   margin-top: 30px;
 }
+.option-one{
+  width:400px;
+}
+.option-one p{
+  width: 280px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.option-two{
+  width: 400px;
+}
+.option-two p{
+  width: 280px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.option-three{
+  width: 280px;
+}
+.option-three p{
+  width: 280px;
+  font-size: 14px;
+  font-weight: 700;
+}
 .funding-option{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  position: relative;
+    left: 40px;
 }
 .funding-option > div {
   border: 1px solid #ccc;
@@ -66,4 +94,6 @@ span {
 .funding-option > div.selected {
   background-color: #ffeeae;
 }
-
+.Supplies{margin-left: 50px;}
+.Funding-progress{margin-left: 50px;}
+.funding-pepole{margin-left: 50px;}
