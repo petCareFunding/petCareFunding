@@ -12,6 +12,7 @@ function SchoolPost(){
         const fundingDate1 = document.querySelector('#fundingDate1').value;
         const fundingDate2 = document.querySelector('#fundingDate2').value;
         const info = document.querySelector('#info').value;
+
         if(!uploadPhoto|| !title|| !person|| ! fundingDate1|| !fundingDate2|| !info){
             setShow(true);
             alert('모든 칸을 채워주세요');
@@ -24,6 +25,8 @@ function SchoolPost(){
     const navigate = useNavigate();
     const Backschool = ()=>{navigate('/school')};
 
+    
+
     return(
         <div className='container schoolpost'>
             <div className='photo-container'>
@@ -33,7 +36,12 @@ function SchoolPost(){
                       사진 업로드
                     </label>
                     <input type='file' accept='.png, .jpeg, .jpg' id='uploadPhoto' style={{display:'none'}} required/> 
-                    <div className='selected'></div>           
+                    <div className='photo-container'>
+                        <div className= 'selectedbox' id='selected1'></div>           
+                        <div className= 'selectedbox' id='selected2'></div>           
+                        <div className= 'selectedbox' id='selected3'></div>           
+                        <div className= 'selectedbox' id='selected4'></div>           
+                    </div>
                 </div>
             </div>
             <div id='title-container'>
