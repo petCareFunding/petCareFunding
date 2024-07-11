@@ -4,6 +4,8 @@ import Footer from "../Footer/Footer";
 import "../ItemDetailPage/Detail.css";
 import { useParams } from "react-router-dom";
 import mockup from "../mockup";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShop } from '@fortawesome/free-solid-svg-icons/faShop';
 
 function ItemDetail() {
   const { imageId } = useParams();
@@ -95,8 +97,10 @@ function ItemDetail() {
               <p>{image.delivery}</p>
             </div>
           </div>
-          <div></div>
+          <div className='funding-shop'>
+          <FontAwesomeIcon icon={faShop}  className='shop-icon' size='3x'/>
           <p className="button">펀딩예약</p>
+          </div>
         </div>
       </div>
       <div className="detail-image">
@@ -110,3 +114,6 @@ function ItemDetail() {
     </div>
   );
 }
+
+export default ItemDetail;
+

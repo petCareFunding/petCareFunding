@@ -14,6 +14,8 @@ const mockup = [
       optionTitle03: "[슈퍼얼리버드] 피부건강세트 S_사료1kg+덴탈껌14p+트릿300g",
       detailTitle: "호주 프리미엄 대용량 강아지 멸균우유 1L 8팩 상품입니다. 강아지 우유에는 24년 4월 제조한 비탤리테 비스킷 미니 힙앤조인트 150g을 증정품으로 포함하여 드립니다. ",
       delivery: "무료배송",
+      detailTitle: "노견만 먹을 수 있냐고 NO",
+      detailTitle02: "전연령에게 부담없이 먹을수 있는 SOFT 반건조 사료",
       detailURL: 'https://cdn3.wadiz.kr/studio/images/2024/05/29/0778fbf5-0c2b-482c-97ca-17380935afdf.jpeg/wadiz/resize/900/format/jpg/quality/80/',
       detailURL02: 'https://cdn3.wadiz.kr/studio/images/2024/05/31/01452222-afba-4c7f-af41-4ade7d47db6f.jpeg/wadiz/resize/900/format/jpg/quality/80/',
       detailURL03: "https://cdn3.wadiz.kr/studio/images/2024/05/28/4f71a30d-067e-4acb-8bac-dddf11b8a287.jpeg/wadiz/resize/900/format/jpg/quality/80/",

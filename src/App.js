@@ -11,7 +11,6 @@ import SchoolPost from './School/SchoolPost.js';
 import ItemsPage from "./PetProductsPage/PetItemsPage/ItemsPage";
 import ItemDetail from "./PetProductsPage/ItemDetailPage/ItemDetail";
 
-
 function App() {
   return (
     <div className="App">
