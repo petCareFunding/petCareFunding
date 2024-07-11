@@ -8,8 +8,6 @@ import Login_Page from './login/Login_Page';
 import Join_Page from './join_members/Join_Page';
 import SchoolMain from './School/SchoolMain.js';
 import SchoolPost from './School/SchoolPost.js';
-import ItemsPage from "./PetProductsPage/PetItemsPage/ItemsPage";
-import ItemDetail from "./PetProductsPage/ItemDetailPage/ItemDetail";
 import EditInfo from './Mypage/EditInfo.js';
 
 function App() {
