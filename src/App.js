@@ -19,12 +19,9 @@ function App() {
           <Route path="/login" element={<Login_Page />} />
           <Route path="/join_members" element={<Join_Page />} />
            <Route path="/ItemsPage" element={<ItemsPage />} />
-        <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
-          <Route path="/join_members" element={<Join_Page />} /> 
+          <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
           <Route path='/school' element={<SchoolMain/>}></Route>
           <Route path='/school/postSchoolFunding' element={<SchoolPost/>}/>
-          <Route path="/ItemsPage" element={<ItemsPage />} />
-          <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
           <Route path="/mypage/editMyInfo" element={<EditInfo />} />
 
         </Routes>
