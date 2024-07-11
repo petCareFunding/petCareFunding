@@ -26,19 +26,19 @@
     margin-right: 20px;
 }
 
-.form-group {
+.form-sub {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.form-group label {
+.form-sub label {
     width: 120px; /* 레이블의 고정 너비 설정 */
     font-size: 18px;
     font-weight: bold;
 }
 
-.form-group input {
+.form-sub input {
     flex: 1;
     padding: 10px;
     margin-left: 10px;
@@ -65,16 +65,17 @@
     font-size: 18px;
 }
 
-.image-section {
+.profile-section {
     flex: 0 0 300px;
     text-align: center;
 }
 
-.image-section img {
+/* .image-section img {
     width: 100%;
+    object-fit: cover;
     height: auto;
     border-radius: 10px;
-}
+} */
 
 .change-image-button {
     display: block;
@@ -96,4 +97,37 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+.pickphoto{
+    background-color:#FFEEAE ;
+    width: 30px;
+    color: black;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.circle{
+    margin-top: 100px;
+    margin-left: 40px; 
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.614);
+}
+#circle{
+    /* margin-top: 100px;*/
+    margin-left: 0px;  
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#cpwbtn{
+    background-color: #FFEEAE;
+    color: black;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
 }

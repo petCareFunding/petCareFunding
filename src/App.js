@@ -8,6 +8,7 @@ import SchoolMain from './School/SchoolMain.js';
 import SchoolPost from './School/SchoolPost.js';
 import ItemsPage from "./PetProductsPage/PetItemsPage/ItemsPage";
 import ItemDetail from "./PetProductsPage/ItemDetailPage/ItemDetail";
+import EditInfo from './Mypage/EditInfo.js';
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
           <Route path='/school/postSchoolFunding' element={<SchoolPost/>}/>
           <Route path="/ItemsPage" element={<ItemsPage />} />
           <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
+          <Route path="/mypage/editMyInfo" element={<EditInfo />} />
+
         </Routes>
       </BrowserRouter>
     </div>
