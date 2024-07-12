@@ -9,6 +9,8 @@ import Join_Page from './join_members/Join_Page';
 import SchoolMain from './School/SchoolMain.js';
 import SchoolPost from './School/SchoolPost.js';
 import EditInfo from './Mypage/EditInfo.js';
+import Mypage from './Mypage/Mypage.js';
+import MypageHeader from './Mypage/Header/Header.js';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path='/school' element={<SchoolMain/>}></Route>
           <Route path='/school/postSchoolFunding' element={<SchoolPost/>}/>
           <Route path="/mypage/editMyInfo" element={<EditInfo />} />
+          <Route path='/Mypage' element={<Mypage />} />
+          <Route path='/Mypage/Header' element={<MypageHeader />} />
 
         </Routes>
       </BrowserRouter>
