@@ -11,10 +11,14 @@ import SchoolPost from './School/SchoolPost.js';
 import EditInfo from './Mypage/EditInfo.js';
 import Mypage from './Mypage/Mypage.js';
 import MypageHeader from './Mypage/Header/Header.js';
+import FuneralContainer from './FuneralService/FuneralContainer';
+import ReservationContainer from './FReservationService/ReservationContainer';
+
 
 function App() {
   return (
     <div className="App">
+      <Main/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
