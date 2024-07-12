@@ -42,8 +42,8 @@ function SchoolPost(){
             reader.onload = ()=>{          //읽은 데이터에 이벤트걸어서 데이터를 문자열로 반환하게함(콜백함수)
                 fileUrl[i] = reader.result;
                 setPreview([...fileUrl]);
-                reader.readAsDataURL(fileArr[i]);
             }
+            reader.readAsDataURL(fileArr[i]);
         }
     };
 
@@ -59,13 +59,16 @@ function SchoolPost(){
                       사진 업로드
                     </label>
                     <input type='file' accept='image/*' style={{display:'none'}} 
-                         multiple required/> 
-                    <div className='photo-container'>
-                        <div className= 'selectedbox' id='selected1'></div>           
-                        <div className= 'selectedbox' id='selected2'></div>           
-                        <div className= 'selectedbox' id='selected3'></div>           
-                        <div className= 'selectedbox' id='selected4'></div>           
-                    </div>
+                         multiple required onChange={handleUpload} /> 
+                    {
+                        preview.map((image,i)=>{
+                            return(
+                            <div className='selected' key={i}>
+                                <img src={image}></img>
+                            </div>
+                            )
+                        }) 
+                    }
                 </div>
             </div>
             <div id='title-container'>
