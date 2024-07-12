@@ -12,12 +12,10 @@ import EditInfo from './Mypage/EditInfo.js';
 import Mypage from './Mypage/Mypage.js';
 import MypageHeader from './Mypage/Header/Header.js';
 
-
-
 function App() {
   return (
     <div className="App">
-            <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login_Page />} />
@@ -32,11 +30,7 @@ function App() {
 
         </Routes>
       </BrowserRouter>
-  
-
     </div>
-
-
   );
 }
 
