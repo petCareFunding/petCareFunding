@@ -18,7 +18,7 @@ import ReservationContainer from './FReservationService/ReservationContainer';
 function App() {
   return (
     <div className="App">
-      <Main/>
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
