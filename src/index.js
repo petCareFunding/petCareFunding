@@ -1,15 +1,23 @@
 import React from 'react';
-import { BrowserRouter } from "react-router-dom";
+import { Routes, Route,Link, BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import FuneralContainer from './FuneralService/FuneralContainer';
+import ReservationContainer from './FReservationService/ReservationContainer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    
+    <BrowserRouter>
       <App/>
-    
+      <Routes>   
+      
+      <Route  path="/Funeral" element={<FuneralContainer/>}></Route>
+      <Route  path="/FReservation" element={<ReservationContainer/>}></Route>
+      
+      </Routes>
+    </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
