@@ -27,7 +27,8 @@ function App() {
           <Route path="/mypage/editMyInfo" element={<EditInfo />} />
           <Route path='/Mypage' element={<Mypage />} />
           <Route path='/Mypage/Header' element={<MypageHeader />} />
-
+          <Route  path="/Funeral" element={<FuneralContainer/>}></Route>
+      <Route  path="/FReservation" element={<ReservationContainer/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
