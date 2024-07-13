@@ -15,7 +15,7 @@ function ItemDetail() {
 
   const navigate = useNavigate();
 
-  // const [resId, setResId] = useState(userid);
+  const [resId, setResId] = useState(userid);
   console.log("imageId: ", imageId);
 
   // console.log("imageId: ", imageId);
