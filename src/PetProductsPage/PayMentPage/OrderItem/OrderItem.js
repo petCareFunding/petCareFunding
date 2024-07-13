@@ -12,14 +12,14 @@ export default function OrderItem() {
   console.log("id!!", item.order.products[0].id);
 
   // console.log("id", item.order.products[0].id);
-  console.log("productImg",item.order.products.imeageURL)
+  // console.log("productImg",item.order.products[0].imeageURL)
   let orderItem = null;
   useEffect(() => {
     orderItem = item.order.products.find((product) => product.id == userid);
     console.log("orderItem", orderItem);
     setProduct(orderItem);
   }, [userid]);
-  console.log("orderItem:", orderItem);
+  // console.log("orderItem:", orderItem);
   if (!product) {
     return <div>상품을 찾을 수 없습니다</div>;
   }
@@ -32,7 +32,7 @@ export default function OrderItem() {
         <img src={product.imeageURL} alt={product.name} />
         <div className="title">
           <p className="order-name">{product.name}</p>
-          <p className="quantity">갯수:{product.quantity}개</p>
+          <p className="quantity">{product.quantity}개</p>
           <p className="price">{product.price}원</p>
         </div>
       </div>
