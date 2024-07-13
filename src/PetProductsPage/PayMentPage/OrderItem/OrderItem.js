@@ -28,20 +28,20 @@ export default function OrderItem() {
     <div className="OrderItem-wrapper">
       <h1>결제하기</h1>
       <div className="order-item" key={product.id}>
-      <h3>주문 상품 정보</h3>
+        <h3>주문 상품 정보</h3>
         <img src={product.imeageURL} alt={product.name} />
         <div className="title">
-          <p className='order-name'>{product.name}</p>
-          <p className='quantity'>{product.quantity}개</p>
-          <p className='price'>{product.price}원</p>
+          <p className="order-name">{product.name}</p>
+          <p className="quantity">{product.quantity}개</p>
+          <p className="price">{product.price}원</p>
         </div>
       </div>
-      <div className='order-info'>
+      <div className="order-info">
         <h3>주문자 정보</h3>
-        <div className='information'>
-            <p className='info-name'>{item.order.name}</p>
-            <p className='info-phone'>{item.order.phone}</p>
-            <p className='info-email'>{item.order.email}</p>
+        <div className="information">
+          <p className="info-name">{item.order.name}</p>
+          <p className="info-phone">{item.order.phone}</p>
+          <p className="info-email">{item.order.email}</p>
         </div>
         <button>수정</button>
       </div>
