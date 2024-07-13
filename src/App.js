@@ -28,7 +28,7 @@ function App() {
           <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
           <Route path='/school' element={<SchoolMain/>}></Route>
           <Route path='/school/postSchoolFunding' element={<SchoolPost/>}/>
-          <Route path="/mypage/editMyInfo" element={<EditInfo />} />
+          <Route path="/Mypage/editMyInfo" element={<EditInfo />} />
           <Route path='/Mypage' element={<Mypage />} />
           <Route path='/Mypage/Header' element={<MypageHeader />} />
           <Route  path="/Funeral" element={<FuneralContainer/>}></Route>
