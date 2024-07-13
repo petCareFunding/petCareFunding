@@ -4,13 +4,9 @@ import Footer from "../Footer/Footer";
 import "../ItemDetailPage/Detail.css";
 import { useParams } from "react-router-dom";
 import mockup from "../mockup";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShop } from "@fortawesome/free-solid-svg-icons/faShop";
 import { useNavigate } from "react-router-dom";
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShop } from '@fortawesome/free-solid-svg-icons/faShop';
 
 
 function ItemDetail() {
@@ -36,9 +32,7 @@ function ItemDetail() {
     setImage(foundImage);
   }, [imageId]);
 
-  const handleOptionClick = (option) => {
-    setSelectedOption(option);
-  };
+
 
   const buttonclick = () => {
     navigate(`/PayMentPage/${imageId}`);
