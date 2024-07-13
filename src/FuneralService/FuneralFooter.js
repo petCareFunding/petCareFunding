@@ -23,8 +23,8 @@ function FFooter(){
                 </div>
                 <div className="footer-text">
                     <div className="Follow">Follow us</div>
-                    <img src={process.env.PUBLIC_URL + './F_img/insta.png'} className="sns"></img>
-                    <img src={process.env.PUBLIC_URL + './F_img/facebook.png'} className="sns"></img>
+                    <img src={process.env.PUBLIC_URL + './F_img/insta.png'} className="Fsns"></img>
+                    <img src={process.env.PUBLIC_URL + './F_img/facebook.png'} className="Fsns"></img>
                 </div>
         </section>
         </>

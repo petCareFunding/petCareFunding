@@ -16,7 +16,7 @@ function FMain(){
                     <h3> 끝까지 함께 하겠습니다.</h3>
                     <div className="bottom_text">소중한 이별을 할 수 있도록</div>
                     <div className="bottom_text2">마지막까지 최선을 다 하겠습니다.</div>
-                    <a href="/FReservation" className="btn">예약하기</a>
+                    <a href="/FReservation" className="Fbtn">예약하기</a>
                 </div>
                 
                 <div className="img_banner">
