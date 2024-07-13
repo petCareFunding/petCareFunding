@@ -61,7 +61,7 @@ h3{
     color: rgba(255, 232, 232, 1);
     margin-top: 20px;
 }
-.btn {
+.Fbtn {
     background-color:#f7f7f700;
 	border-radius:4px;
 	border:2px solid #f5eef6f9;
@@ -71,7 +71,6 @@ h3{
 	font-size:20px;
 	padding:13px 38px;
 	text-decoration:none;
-    margin-left: 35%;
     margin-top: 97px;
     
 }
@@ -134,6 +133,8 @@ p{
     font-size: 14px;
     color: rgba(124, 120, 120, 0.719);
     line-height: 20px;
+    padding-left: 76px;
+    text-align: center;
 }
 
 .btm_txt{
