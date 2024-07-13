@@ -1,6 +1,5 @@
 import './ReservationHeader.css'
 
-
 export default function ReservationHeader() {
 
     return(
