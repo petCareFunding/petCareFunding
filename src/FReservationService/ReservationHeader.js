@@ -1,7 +1,7 @@
-import './FuneralHeader.css'
+import './ReservationHeader.css'
 
 
-export default function funeral() {
+export default function ReservationHeader() {
 
     return(
         <div className="Fheader">
