@@ -1,6 +1,6 @@
 /* 푸터 css */
 
-.footer{
+.Ffooter{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -9,14 +9,14 @@
     margin-top: 300px;
     background-color:rgba(231, 194, 194, 0.361);
 }
-.footer-text1{
+.Ffooter-text1{
     margin-top: 40px;
 }
-.footer-text2{
+.Ffooter-text2{
     margin-top: 25px;
     line-height:30px;
 }
-.Follow{
+.FFollow{
     margin-top: 10px;
     font-size: 60px;
     color:rgb(247, 160, 154)

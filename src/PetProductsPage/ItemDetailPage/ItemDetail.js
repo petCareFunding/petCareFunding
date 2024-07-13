@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShop } from "@fortawesome/free-solid-svg-icons/faShop";
 import { useNavigate } from "react-router-dom";
 
-
 function ItemDetail() {
   const { imageId } = useParams();
   const [image, setImage] = useState(null);
@@ -43,24 +42,9 @@ function ItemDetail() {
 
 
 
-  // console.log("imageId: ", imageId);
+  
 
-  //console.log("image.imgURL:", mockup[0].imgURL)
-
-  useEffect(() => {
-    // console.log("image.imgURL:", image.imgURL);
-    const foundImage = mockup.find(
-      (image) => image.id === parseInt(imageId, 10)
-    );
-    setImage(foundImage);
-  }, [imageId]);
-
-  const handleOptionClick = (option) => {
-    setSelectedOption(option);
-  };
-
-  // console.log("image.imgURL:", image.imgURL);
-  console.log("imageId: ", imageId);
+ 
 
   if (!image) {
     return <div>상품을 찾을 수 없습니다</div>;
