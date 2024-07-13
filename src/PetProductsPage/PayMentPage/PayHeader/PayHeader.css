@@ -1,0 +1,11 @@
+div{
+    width: 100%;
+}
+div h1{
+    width: 400px;
+    margin: 30px auto;
+    font-size: 35px;
+    font-family: Lemon;
+    -webkit-text-stroke: 2px black;
+}
+h1 a{text-decoration: none; }

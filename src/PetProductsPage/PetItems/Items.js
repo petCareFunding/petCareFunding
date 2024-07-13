@@ -8,7 +8,7 @@ export default function PetItems({ images, imageId }) {
         images.map((image) => (
           <div className="item">
             <Link to={`/ItemsPage/${image.id}`}>
-              <img src={image.imgURL} alt={image.name} />
+            <img src={image.imgURL} alt={image.name} />
               {/* <button className="button">펀딩 예약 하기</button> */}
             </Link>
             <p className="item-detail first second">

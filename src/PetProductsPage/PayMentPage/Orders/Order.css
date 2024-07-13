@@ -1,0 +1,44 @@
+.order_pay{
+  width: 70%;
+background-color: #ffffff;
+  height: 300px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.order_pay .order-title{margin-left:  130px; margin-top: 50px;}
+.order{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+}
+.order .order-name2{
+  width: 100px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0px;
+}
+.order .order-email{
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(90, 90, 90);
+  margin-top: 10px;
+}
+.order .order-phone{
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(90, 90, 90);
+  margin-top: 0px;
+}
+button{
+  width: 100px;
+  height: 40px;
+  float: right;
+  position: relative;
+  bottom: 90px; right: 200px;
+}
+
+
+
+
+
