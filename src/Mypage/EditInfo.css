@@ -1,0 +1,133 @@
+.EditMyInfo {
+    background-color: white;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.info-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 36px;
+    color: #FFEEAE;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.form-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.form-sub {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-sub label {
+    width: 120px; /* 레이블의 고정 너비 설정 */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-sub input {
+    flex: 1;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100px;
+}
+
+.phone-number {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.phone-number input {
+    width: 60px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.phone-number span {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.profile-section {
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+/* .image-section img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+} */
+
+.change-image-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #FFEEAE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-button {
+    display: block;
+    margin: 40px auto 0;
+    padding: 10px 20px;
+    background-color: #FFEEAE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.pickphoto{
+    background-color:#FFEEAE ;
+    width: 30px;
+    color: black;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.circle{
+    margin-top: 100px;
+    margin-left: 40px; 
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.614);
+}
+#circle{
+    /* margin-top: 100px;*/
+    margin-left: 0px;  
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#cpwbtn{
+    background-color: #FFEEAE;
+    color: black;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+}
