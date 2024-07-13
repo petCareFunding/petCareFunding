@@ -24,7 +24,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login_Page />} />
           <Route path="/join_members" element={<Join_Page />} />
-           <Route path="/ItemsPage" element={<ItemsPage />} />
+          <Route path="/ItemsPage" element={<ItemsPage />} />
           <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
           <Route path='/school' element={<SchoolMain/>}></Route>
           <Route path='/school/postSchoolFunding' element={<SchoolPost/>}/>
@@ -32,7 +32,7 @@ function App() {
           <Route path='/Mypage' element={<Mypage />} />
           <Route path='/Mypage/Header' element={<MypageHeader />} />
           <Route  path="/Funeral" element={<FuneralContainer/>}></Route>
-      <Route  path="/FReservation" element={<ReservationContainer/>}></Route>
+          <Route  path="/FReservation" element={<ReservationContainer/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

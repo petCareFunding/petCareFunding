@@ -1,7 +1,10 @@
 import React from 'react';
 import './Mypage.css'; 
+import { useNavigate } from 'react-router-dom';
 
 const MyPage = () => {
+const navigate = useNavigate();
+const GotoEditMyInfo = ()=>{navigate('/Mypage/editMyInfo')};
   return (
       <main className="main-content">
         <h2>MY PAGE</h2>
@@ -16,7 +19,7 @@ const MyPage = () => {
           </div>
           <div className="option">
           <img src="/Mypage_img/myimg.png" />
-            <p>회원 정보 수정</p>
+            <p onClick={GotoEditMyInfo}>회원 정보 수정</p>
           </div>
         </div>
         <div className="actions">
