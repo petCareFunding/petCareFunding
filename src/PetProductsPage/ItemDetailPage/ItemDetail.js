@@ -4,13 +4,19 @@ import Footer from "../Footer/Footer";
 import "../ItemDetailPage/Detail.css";
 import { useParams } from "react-router-dom";
 import mockup from "../mockup";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShop } from '@fortawesome/free-solid-svg-icons/faShop';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShop } from "@fortawesome/free-solid-svg-icons/faShop";
+import { useNavigate } from "react-router-dom";
 
 function ItemDetail() {
   const { imageId } = useParams();
   const [image, setImage] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
+
+  const navigate = useNavigate();
+
+  // const [resId, setResId] = useState(userid);
+  console.log("imageId: ", imageId);
 
   // console.log("imageId: ", imageId);
 
@@ -26,6 +32,10 @@ function ItemDetail() {
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
+  };
+
+  const buttonclick = () => {
+    navigate(`/PayMentPage/${imageId}`);
   };
 
   // console.log("image.imgURL:", image.imgURL);
@@ -97,9 +107,9 @@ function ItemDetail() {
               <p>{image.delivery}</p>
             </div>
           </div>
-          <div className='funding-shop'>
-          <FontAwesomeIcon icon={faShop}  className='shop-icon' size='3x'/>
-          <p className="button">펀딩예약</p>
+          <div className="funding-shop">
+            <FontAwesomeIcon icon={faShop} className="shop-icon" size="3x" />
+            <p onClick={buttonclick} className='funding-but'>펀딩구매하기</p>
           </div>
         </div>
       </div>
@@ -116,4 +126,3 @@ function ItemDetail() {
 }
 
 export default ItemDetail;
-
