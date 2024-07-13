@@ -1,5 +1,5 @@
 import React from 'react';
-import './MyPage.css'; 
+import './Mypage.css'; 
 
 const MyPage = () => {
   return (
@@ -7,15 +7,15 @@ const MyPage = () => {
         <h2>MY PAGE</h2>
         <div className="options">
           <div className="option">
-            <img src="" alt="" />
+            <img src="/Mypage_img/funding.png" />
             <p>펀딩 내역</p>
           </div>
           <div className="option">
-            <img src="" alt="" />
+          <img src="/Mypage_img/good.png" />
             <p>내 찜 목록</p>
           </div>
           <div className="option">
-            <img src="" alt="" />
+          <img src="/Mypage_img/myimg.png" />
             <p>회원 정보 수정</p>
           </div>
         </div>
