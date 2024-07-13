@@ -1,99 +1,128 @@
-.item-wrapper {
-  width: 100%;
-}
-.item-detail {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 200px;
-}
-.item-detail img{
-  width: 100%;
-  height: 500px;
-  border-radius: 20px;
+import React, { useState, useEffect } from "react";
+import PetHeader from "../Header/PetHeader";
+import Footer from "../Footer/Footer";
+import "../ItemDetailPage/Detail.css";
+import { useParams } from "react-router-dom";
+import mockup from "../mockup";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShop } from "@fortawesome/free-solid-svg-icons/faShop";
+import { useNavigate } from "react-router-dom";
+
+function ItemDetail() {
+  const { imageId } = useParams();
+  const [image, setImage] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const navigate = useNavigate();
+
+  const [resId, setResId] = useState(userid);
+  console.log("imageId: ", imageId);
+
+  // console.log("imageId: ", imageId);
+
+  //console.log("image.imgURL:", mockup[0].imgURL)
+
+  useEffect(() => {
+    // console.log("image.imgURL:", image.imgURL);
+    const foundImage = mockup.find(
+      (image) => image.id === parseInt(imageId, 10)
+    );
+    setImage(foundImage);
+  }, [imageId]);
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+  };
+
+  const buttonclick = () => {
+    navigate(`/PayMentPage/${imageId}`);
+  };
+
+  // console.log("image.imgURL:", image.imgURL);
+  console.log("imageId: ", imageId);
+
+  if (!image) {
+    return <div>상품을 찾을 수 없습니다</div>;
+  }
+  return (
+    <div className="item-wrapper">
+      <PetHeader />
+      <div className="item-detail" key={image.id}>
+        <img src={image.imgURL} alt={image.name} />
+        <div className="item-txt">
+          <p className="Supplies">{image.name}</p>
+          <p className="Funding-progress">
+            <span>펀딩 진행중:</span>
+            {image.funding}
+          </p>
+          <p className="funding-pepole">
+            <span>펀딩인원:</span>
+            {image.personnel}
+          </p>
+          <span className="option-title">옵션선택</span>
+          <div className="funding-option">
+            <div
+              className={`option-one ${
+                selectedOption === "option-one" ? "selected" : ""
+              }`}
+              onClick={() => handleOptionClick("option-one")}
+            >
+              <p>
+                <span>가격:</span>
+                {image.price}원
+              </p>
+              <p>{image.optionTitle}</p>
+              <hr />
+              <p>{image.detailTitle}</p>
+              <p>{image.delivery}</p>
+            </div>
+            <div
+              className={`option-two ${
+                selectedOption === "option-two" ? "selected" : ""
+              }`}
+              onClick={() => handleOptionClick("option-two")}
+            >
+              <p>
+                <span>가격:</span>
+                {image.price}원
+              </p>
+              <p>{image.optionTitle02}</p>
+              <hr />
+              <p>{image.detailTitle}</p>
+              <p>{image.delivery}</p>
+            </div>
+            <div
+              className={`option-three ${
+                selectedOption === "option-three" ? "selected" : ""
+              }`}
+              onClick={() => handleOptionClick("option-three")}
+            >
+              <p>
+                <span>가격:</span>
+                {image.price}원
+              </p>
+              <p>{image.optionTitle03}</p>
+              <hr />
+              <p>{image.detailTitle}</p>
+              <p>{image.delivery}</p>
+            </div>
+          </div>
+          <div className="funding-shop">
+            <FontAwesomeIcon icon={faShop} className="shop-icon" size="3x" />
+            <p onClick={buttonclick} className='funding-but'>펀딩구매하기</p>
+          </div>
+        </div>
+      </div>
+      <div className="detail-image">
+        <img src={image.detailURL} />
+        <img src={image.detailURL02} />
+        <img src={image.detailURL03} />
+        <img src={image.detailURL04} />
+        <img src={image.detailURL05} />
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
-.item-txt {
-  width: 50%;
-  position: relative;
- 
-}
-p {
-  width: 400px;
-  text-align: left;
-  font-size: 20px;
-  font-weight: bold;
-}
-span {
-  margin-right: 20px;
-}
-.button {
-  background-color: #ffeeae;
-  width: 400px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  cursor: pointer;
-  margin-left: 40px;
-}
-.button:hover{color: rgba(0, 0, 255, 0.493);}
-.detail-image{width: 50%; margin: 0 auto;}
-.detail-image img{
-    width: 90%;
-    margin-top: 100px;
-}
-.detail-image:nth-child(3) img{
-  width: 100%;
-}
-.option-title{
-  width: 200px;
-  font-size: 25px;
-  font-weight: bold;
-  display: block;
-  margin-top: 30px;
-}
-.option-one{
-  width:400px;
-}
-.option-one p{
-  width: 280px;
-  font-size: 14px;
-  font-weight: 700;
-}
-.option-two{
-  width: 400px;
-}
-.option-two p{
-  width: 280px;
-  font-size: 14px;
-  font-weight: 700;
-}
-.option-three{
-  width: 280px;
-}
-.option-three p{
-  width: 280px;
-  font-size: 14px;
-  font-weight: 700;
-}
-.funding-option{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  position: relative;
-    left: 40px;
-}
-.funding-option > div {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-  cursor: pointer; 
-}
-
-.funding-option > div.selected {
-  background-color: #ffeeae;
-}
-.Supplies{margin-left: 50px;}
-.Funding-progress{margin-left: 50px;}
-.funding-pepole{margin-left: 50px;}
-
+export default ItemDetail;
