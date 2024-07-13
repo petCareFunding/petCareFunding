@@ -23,7 +23,7 @@ export default function OrderItem() {
   if (!product) {
     return <div>상품을 찾을 수 없습니다</div>;
   }
-  // console.log("product.imageURL", item.order.products.imageURL);
+  console.log("product.imageURL", item.order.products.imageURL);
   return (
     <div className="OrderItem-wrapper">
       <h1>결제하기</h1>
