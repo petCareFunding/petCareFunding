@@ -1,6 +1,7 @@
-import './ReservationHeader.css'
+import './FuneralHeader.css'
 
-export default function ReservationHeader() {
+
+export default function funeral() {
 
     return(
         <div className="Fheader">
@@ -13,10 +14,10 @@ export default function ReservationHeader() {
                     </ul>
                 </nav>
             </div>
-            <nav className="Menu">
+            <nav className="FMenu">
                 <ul>
                     <li><a href="/school">유치원 펀딩</a></li>
-                    <li><a href="/mypage">HOME</a></li>
+                    <li><a href="/">HOME</a></li>
                     <li><a href="/products">반려동물 용품 펀딩</a></li>
                     
                 </ul>
