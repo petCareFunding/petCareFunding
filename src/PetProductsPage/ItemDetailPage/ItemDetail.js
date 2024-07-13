@@ -16,8 +16,12 @@ function ItemDetail() {
 
   const navigate = useNavigate();
 
-  const [resId, setResId] = useState(userid);
+  const [resId, setResId] = useState('');
   console.log("imageId: ", imageId);
+
+  const handleOptionClick = () =>  {
+    return ''
+  }
 
   // console.log("imageId: ", imageId);
 
@@ -132,8 +136,9 @@ function ItemDetail() {
         <img src={image.detailURL05} />
       </div>
       <Footer />
+      </div>
     </div>
-  );
+  )
 }
 
 export default ItemDetail;
