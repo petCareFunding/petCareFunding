@@ -19,8 +19,8 @@ function ItemDetail() {
   const [resId, setResId] = useState('');
   console.log("imageId: ", imageId);
 
-  const handleOptionClick = () =>  {
-    return ''
+  const handleOptionClick = (option) =>  {
+    setSelectedOption(option)
   }
 
   // console.log("imageId: ", imageId);
@@ -120,12 +120,6 @@ function ItemDetail() {
           <div className="funding-shop">
             <FontAwesomeIcon icon={faShop} className="shop-icon" size="3x" />
             <p onClick={buttonclick} className='funding-but'>펀딩구매하기</p>
-
-          <div className='funding-shop'>
-          <FontAwesomeIcon icon={faShop}  className='shop-icon' size='3x'/>
-          <p className="button">펀딩예약</p>
-
-          </div>
         </div>
       </div>
       <div className="detail-image">
