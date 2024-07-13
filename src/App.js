@@ -13,7 +13,7 @@ import Mypage from './Mypage/Mypage.js';
 import MypageHeader from './Mypage/Header/Header.js';
 import FuneralContainer from './FuneralService/FuneralContainer';
 import ReservationContainer from './FReservationService/ReservationContainer';
-
+import OrderItem from './PetProductsPage/PayMentPage/OrderItem/OrderItem.js';
 
 function App() {
   return (
@@ -33,6 +33,7 @@ function App() {
           <Route path='/Mypage/Header' element={<MypageHeader />} />
           <Route  path="/Funeral" element={<FuneralContainer/>}></Route>
       <Route  path="/FReservation" element={<ReservationContainer/>}></Route>
+      <Route path='/PayMentPage/:userid'  element={<OrderItem/>} />
         </Routes>
       </BrowserRouter>
     </div>
