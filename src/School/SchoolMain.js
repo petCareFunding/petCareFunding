@@ -8,13 +8,13 @@ import SchoolPost from "./SchoolPost.js";
 
 
 function SchoolMain(){
-    var [title,setTitle] = useState([
+    const[title,setTitle] = useState([
         '김포 사랑유치원','홍대 스타유치원','부평 코코유치원','잠실 야옹유치원']);
-    var [fundingstate,setState] = useState(true);
-    var [people,setpeople] = useState([0, 0, 0, 0]);
-    var [month,setMonth] = useState([7,8,9,9]);
-    var [date,setDate] = useState([22,6,16,13]);
-    var [like,setLike] = useState([10,60,45,5]);
+    const [fundingstate,setState] = useState(true);
+    const [people,setpeople] = useState([0, 0, 0, 0]);
+    const [month,setMonth] = useState([7,8,9,9]);
+    const [date,setDate] = useState([22,6,16,13]);
+    const [like,setLike] = useState([10,60,45,5]);
 
     const navigate = useNavigate();
     const Gopostpage = ()=>{navigate('/school/postSchoolFunding')};
