@@ -106,30 +106,5 @@ function SaveAlert(){
 
 
 
-
-/*function Checkpassword(){
-    const cpw1 = document.querySelector('#checkpassword').value;
-    const cpw2 = document.querySelector('#before').value;
-    return(
-        cpw1 !== cpw2 ? alert('비밀번호가 일치하지 않습니다') : null
-    )
-};*/
-
-
-
-// const image = document.querySelector('#myprofile');
-// image.addEventListener('change',(e)=>{
-//     const reader = new FileReader();
-//     reader.readAsDataURL(e.target.files[0]);
-    
-//     reader.onload = function(e){
-//         const img = document.createElement('img');
-//         img.setAttribute('src',e.target.result);
-//         document.querySelector('.circle').appendChild(img)
-//     }
-        
-    
-// })
-
 export default EditInfo;
 
