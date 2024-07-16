@@ -3,8 +3,6 @@ import "../TotalPay/TotalPay.css"
 import PayMockup from '../PayMockup';
 import { useParams } from 'react-router-dom';
 
-
-
 export default function TotalPayMent(){
     const total=PayMockup;
     const [product, setProduct] = useState(null);

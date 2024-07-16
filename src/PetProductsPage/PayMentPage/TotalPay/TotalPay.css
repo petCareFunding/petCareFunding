@@ -1,50 +1,50 @@
 .total-payment {
-  width: 60%;
-  margin: 0 auto;
-  overflow: hidden;
-  background-color: white;
-}
-.totalpay {
-  width: 100%;
-  margin-top: 50px;
-  margin-left: 40px;
-}
-.totalpay p {
-  padding: 5px;
-  float: left;
-}
-.totalpay .price-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #919191;
-}
-.totalpay .coupone-name {
-    font-size: 16px;
-    font-weight: 700;
-    color: #919191;
-}
-.totalpay .point-name{
-    font-size: 16px;
-    font-weight: 700;
-    color: #919191;
-}
-.totalpay .delivery-name{
-    font-size: 16px;
-    font-weight: 700;
-    color: #919191;
-}
-.totalpay .product-price{
-    font-size: 18px;
-}
-.totalpay .product-coupone{font-size: 18px;}
-.totalpay .product-point{font-size: 18px;}
-.totalpay .delivery-peice{font-size: 18px;}
-.total{
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
     overflow: hidden;
-    border-top: 1px solid #ccc;
-    margin-top: 10px;
-}
-.total p{
-    margin-top: 10px;
-}
+    background-color: white;
+  }
+  .totalpay {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+  .totalpay p {
+    padding: 5px;
+    float: left;
+  }
+  .totalpay .price-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #919191;
+  }
+  .totalpay .coupone-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #919191;
+  }
+  .totalpay .point-name{
+      font-size: 16px;
+      font-weight: 700;
+      color: #919191;
+  }
+  .totalpay .delivery-name{
+      font-size: 16px;
+      font-weight: 700;
+      color: #919191;
+  }
+  .totalpay .product-price{
+      font-size: 18px;
+  }
+  .totalpay .product-coupone{font-size: 18px;}
+  .totalpay .product-point{font-size: 18px;}
+  .totalpay .delivery-peice{font-size: 18px;}
+  .total{
+      width: 100%;
+      overflow: hidden;
+      border-top: 1px solid #ccc;
+      margin-top: 10px;
+  }
+  .total p{
+      margin-top: 10px;
+  }
