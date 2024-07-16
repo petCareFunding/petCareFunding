@@ -13,7 +13,7 @@ function SchoolPost(){
     const [fundingDate1, setFundingDate1] = useState('');
     const [fundingDate2, setFundingDate2] = useState('');
     const [info, setInfo] = useState('');
-    const [Max, setMax] = useState(false);
+
     
     const handleSubmit = ()=>{
         if( !title|| !person|| ! fundingDate1|| !fundingDate2|| !info){
@@ -78,8 +78,8 @@ function SchoolPost(){
             </div>
 
                 {/* {
-                     postImg.length >= 4 ? 모르겟떠염: <div/>
-                } */}
+                    preview.length >= 4 ? null: <div/> 모르겟더염
+                }  */}
             <div id='title-container'>
                     <h3>글 제목</h3>
                     <input type='text' id='scp-title' placeholder='지역 + 유치원이름' 
