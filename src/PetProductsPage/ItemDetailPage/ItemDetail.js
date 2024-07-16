@@ -19,16 +19,11 @@ function ItemDetail() {
   const [resId, setResId] = useState('');
   console.log("imageId: ", imageId);
 
-  const handleOptionClick = () =>  {
-    return ''
+  const handleOptionClick = (option) =>  {
+    setSelectedOption(option)
   }
 
-  // console.log("imageId: ", imageId);
-
-  //console.log("image.imgURL:", mockup[0].imgURL)
-
   useEffect(() => {
-    // console.log("image.imgURL:", image.imgURL);
     const foundImage = mockup.find(
       (image) => image.id === parseInt(imageId, 10)
     );
@@ -37,18 +32,12 @@ function ItemDetail() {
 
 
 
-  const buttonclick = () => {
+  const payment_connection = () => {
     navigate(`/PayMentPage/${imageId}`);
   };
 
-  // console.log("image.imgURL:", image.imgURL);
   console.log("imageId: ", imageId);
 
-
-
-  
-
- 
 
   if (!image) {
     return <div>상품을 찾을 수 없습니다</div>;
@@ -119,13 +108,7 @@ function ItemDetail() {
 
           <div className="funding-shop">
             <FontAwesomeIcon icon={faShop} className="shop-icon" size="3x" />
-            <p onClick={buttonclick} className='funding-but'>펀딩구매하기</p>
-
-          <div className='funding-shop'>
-          <FontAwesomeIcon icon={faShop}  className='shop-icon' size='3x'/>
-          <p className="button">펀딩예약</p>
-
-          </div>
+            <p onClick={payment_connection} className='funding-but'>펀딩구매하기</p>
         </div>
       </div>
       <div className="detail-image">
@@ -135,8 +118,8 @@ function ItemDetail() {
         <img src={image.detailURL04} />
         <img src={image.detailURL05} />
       </div>
-      <Footer />
       </div>
+      <Footer />
     </div>
   )
 }
