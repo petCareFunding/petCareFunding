@@ -49,6 +49,7 @@ export default function OrderItem() {
       <Delivery/>
       <TotalPay/>
       <Payment_Method/>
+      <div className='payment-button'>결제하기</div>
     </div>
   );
 }
