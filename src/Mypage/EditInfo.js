@@ -93,7 +93,7 @@ function EditInfo() {
                                  onChange = {handleImageChange} style={{display:'none'}} />       
                 </div>
             </div>
-            <button className="save-button" onClick={SaveAlert}>저장</button>
+            <button className="myinfo-save-button" onClick={SaveAlert}>저장</button>
         </div>
     );
 };
