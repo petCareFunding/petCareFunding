@@ -1,5 +1,6 @@
 import React from "react";
 import "../OrderItem/OrderItem.css";
+import TotalPay from '../TotalPay/TotalPay'
 import PayMockup from "../PayMockup";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -11,15 +12,13 @@ export default function OrderItem() {
   console.log("userid!!", userid);
   console.log("id!!", item.order.products[0].id);
 
-  // console.log("id", item.order.products[0].id);
-  // console.log("productImg",item.order.products[0].imeageURL)
+
   let orderItem = null;
   useEffect(() => {
     orderItem = item.order.products.find((product) => product.id == userid);
     console.log("orderItem", orderItem);
     setProduct(orderItem);
   }, [userid]);
-  // console.log("orderItem:", orderItem);
   if (!product) {
     return <div>상품을 찾을 수 없습니다</div>;
   }
@@ -45,6 +44,7 @@ export default function OrderItem() {
         </div>
         <button>수정</button>
       </div>
+      <TotalPay/>
     </div>
   );
 }
