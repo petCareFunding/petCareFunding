@@ -3,8 +3,11 @@ import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 function SchoolPost(){
-    var [show,setShow] = useState(false);
+    const [show,setShow] = useState(false);
     const [photoURL, setPhotoURL] = useState('');
+    const navigate = useNavigate();
+    const Backschool = ()=>{navigate('/school')};
+    
     const showAlert = ()=>{
         const uploadPhoto = document.querySelector('#uploadPhoto').value;
         const title = document.querySelector('#title').value;
@@ -21,8 +24,6 @@ function SchoolPost(){
         }
     };
     
-    const navigate = useNavigate();
-    const Backschool = ()=>{navigate('/school')};
 
     return(
         <div className='container schoolpost'>
