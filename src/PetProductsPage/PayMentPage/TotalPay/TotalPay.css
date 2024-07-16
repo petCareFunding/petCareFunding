@@ -1,12 +1,13 @@
 .total-payment {
     width: 60%;
+    height: 320px;
     margin: 0 auto;
     overflow: hidden;
     background-color: white;
   }
   .totalpay {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 40px;
   }
   .totalpay p {
@@ -46,5 +47,5 @@
       margin-top: 10px;
   }
   .total p{
-      margin-top: 10px;
+      margin-top: 20px;
   }
