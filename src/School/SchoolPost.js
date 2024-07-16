@@ -28,20 +28,20 @@ function SchoolPost(){
     const navigate = useNavigate();
     const Backschool = ()=>{navigate('/school')};
 
-    const [postImg, setPostImg] = useState([]); //이미지 파일 자체의 상태
-    const [preview, setPreview] = useState([]); //이미지 파일의 url 담기 
+    const [postImg, setPostImg] = useState([]); 
+    const [preview, setPreview] = useState([]); 
 
 
     const handleUpload = (e)=>{
         const fileArr = e.target.files;
-        setPostImg(Array.from(fileArr)); //배열로 만들어서 state에 업데이트
+        setPostImg(Array.from(fileArr)); 
         
-        const fileUrl = []; //url 넣어줄 빈 배열 생성
-        //파일의 개수만큼 반복문 실행
+        const fileUrl = []; 
+     
 
         for(let i =0; i < fileArr.length; i++){
-            let reader = new FileReader(); //데이터 읽기
-            reader.onload = ()=>{          //읽은 데이터에 이벤트걸어서 데이터를 문자열로 반환하게함(콜백함수)
+            let reader = new FileReader(); 
+            reader.onload = ()=>{          
                 fileUrl[i] = reader.result;
                 setPreview([...fileUrl]);
             }
@@ -56,10 +56,16 @@ function SchoolPost(){
         <div className='schoolpost'>
             <div className='scp-photo-container'>
                 <label className='photo-fill-btn' htmlFor = 'uploadPhoto'>
-                    사진 업로드
+                    사진 업로드 
                     <input type='file' accept='image/*' style={{display:'none'}} id='uploadPhoto'
                         multiple required onChange={handleUpload} /> 
                 </label>
+                <div style={{gap:'2px'}}>
+                    <p>사진을 한번에 여러장 선택하세요.</p>
+                    <p>맨 좌측 첫줄 사진이 대표사진으로 설정됩니다.</p>
+                </div>
+            </div>
+            <div className='scp-photo-grid'>
                 {
                     preview.map((image,id)=>{
                         return(
@@ -68,12 +74,12 @@ function SchoolPost(){
                         </div>
                         )
                     }) 
-                };
+                }
+            </div>
 
                 {/* {
                      postImg.length >= 4 ? 모르겟떠염: <div/>
                 } */}
-            </div>
             <div id='title-container'>
                     <h3>글 제목</h3>
                     <input type='text' id='scp-title' placeholder='지역 + 유치원이름' 
