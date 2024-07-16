@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
+
 function SchoolPost(){
     
     const [show, setShow] = useState(false);
@@ -12,6 +13,7 @@ function SchoolPost(){
     const [fundingDate1, setFundingDate1] = useState('');
     const [fundingDate2, setFundingDate2] = useState('');
     const [info, setInfo] = useState('');
+    const [Max, setMax] = useState(false);
     
     const handleSubmit = ()=>{
         if( !title|| !person|| ! fundingDate1|| !fundingDate2|| !info){
@@ -51,55 +53,58 @@ function SchoolPost(){
 
 
     return(
-        <div className='container schoolpost'>
-            <div className='photo-container'>
-                {/* <h3>사진</h3> */}
-                <div className='upload-container'>
-                    <label className='photo-fill-btn' htmlFor = 'uploadPhoto'>
-                      사진 업로드
-                    </label>
-                    <input type='file' accept='image/*' style={{display:'none'}} 
-                         multiple required onChange={handleUpload} /> 
-                    {
-                        preview.map((image,i)=>{
-                            return(
-                            <div className='selected' key={i}>
-                                <img src={image}></img>
-                            </div>
-                            )
-                        }) 
-                    }
-                </div>
+        <div className='schoolpost'>
+            <div className='scp-photo-container'>
+                <label className='photo-fill-btn' htmlFor = 'uploadPhoto'>
+                    사진 업로드
+                    <input type='file' accept='image/*' style={{display:'none'}} id='uploadPhoto'
+                        multiple required onChange={handleUpload} /> 
+                </label>
+                {
+                    preview.map((image,id)=>{
+                        return(
+                        <div className='selected' key={id}>
+                            <img src={image} id='selectedPhotos'></img>
+                        </div>
+                        )
+                    }) 
+                };
+
+                {/* {
+                     postImg.length >= 4 ? 모르겟떠염: <div/>
+                } */}
             </div>
             <div id='title-container'>
                     <h3>글 제목</h3>
-                    <input type='text' id='title' placeholder='지역 + 유치원이름' 
+                    <input type='text' id='scp-title' placeholder='지역 + 유치원이름' 
                      value = {title} onChange={(e)=> setTitle(e.target.value)}></input>
             </div>
             <div id='person-container'>
                     <h3>판매자 정보</h3>
-                    <input id='person' placeholder='유치원이름 기재' 
+                    <input type='text' id='scp-person' placeholder='유치원이름 기재' 
                       value = {person} onChange={(e)=> setPerson(e.target.value)}></input>
             </div>
             <div id='date-container'>
                     <h3>펀딩기간</h3>
-                    <input type='date' id='fundingDate1' 
+                    <input type='date' id='scp-fundingDate1' 
                       value = {fundingDate1} onChange={(e)=> setFundingDate1(e.target.value)}></input> 
                     <h2>~</h2>
-                    <input type='date' id='fundingDate2' 
+                    <input type='date' id='scp-fundingDate2' 
                       value = {fundingDate2} onChange={(e)=> setFundingDate2(e.target.value)}></input>
             </div>
             <div id='info-container'>
                     <h3>상품설명</h3>
-                    <textarea id='info' placeholder='상품에 대해 설명해주세요..' 
+                    <textarea id='scp-info' placeholder='상품에 대해 설명해주세요..' 
                       value = {info} onChange={(e)=> setInfo(e.target.value)}></textarea>
             </div>
-            <button id='uploadbtn' onClick={handleSubmit}>등록하기</button>
-            <button id='uploadbtn' onClick={Backschool}>글 목록</button>
+            <button id='schuploadbtn' onClick={handleSubmit}>등록하기</button>
+            <button id='schuploadbtn' onClick={Backschool}>글 목록</button>
         </div>
     )
     
 
 };
+
+
 
 export default SchoolPost;
