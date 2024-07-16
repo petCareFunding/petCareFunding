@@ -26,7 +26,7 @@ export default function OrderItem() {
   console.log("product.imageURL", item.order.products.imageURL);
   return (
     <div className="OrderItem-wrapper">
-      <h1>결제하기</h1>
+      <h3 className='order-title'>결제하기</h3>
       <div className="order-item" key={product.id}>
         <h3>주문 상품 정보</h3>
         <img src={product.imeageURL} alt={product.name} />
