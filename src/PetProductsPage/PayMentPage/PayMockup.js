@@ -35,6 +35,7 @@ const PayMockup = {
     Delivery: 0,
     coupon: 0,
     pointsele:0,
+    bank: "583-6583457-11",
   },
 };
 
