@@ -1,0 +1,58 @@
+.paymethod {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+}
+.paymethod .method {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  top: 30px;
+}
+.payment {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card-payment {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.card-payment span {
+  width: 500px;
+  font-size: 18px;
+}
+
+.virtual-account {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.virtual-account span {
+  width: 500px;
+  font-size: 18px;
+}
+.Deposit_without_bankbook {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.Deposit_without_bankbook span {
+  width: 500px;
+  font-size: 18px;
+}
+.Kakao_Pay {
+    width: 270px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.Kakao_Pay span{
+    width: 500px;
+    font-size: 18px;
+}
