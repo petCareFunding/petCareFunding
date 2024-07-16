@@ -129,7 +129,7 @@ function ItemDetail() {
         <img src={image.detailURL04} />
         <img src={image.detailURL05} />
       </div>
-      <Footer />
+      {/* <Footer /> */}
       </div>
     </div>
   )
