@@ -1,0 +1,28 @@
+.delivery{
+    width: 60%;
+    overflow: hidden;
+    margin: 30px auto;
+    background-color: white;
+}
+.delivery-info {
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.delivery-info p{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+.delivery-info .delivery-phone{color: #8a8a8a;}
+.delivery-info .delivery-address{color: #8a8a8a;}
+.memo{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+select{height: 50px; margin-top: 10px;}
+.delivery-button{
+    position: relative;
+    bottom: 150px; left: 800px;
+}
