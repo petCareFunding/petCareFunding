@@ -2,6 +2,7 @@ import React from "react";
 import "../OrderItem/OrderItem.css";
 import TotalPay from '../TotalPay/TotalPay'
 import PayMockup from "../PayMockup";
+import Payment_Method from '../PaymentMethod/Payment_Method';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Delivery from '../Delivery/Delivery';
@@ -47,6 +48,7 @@ export default function OrderItem() {
       </div>
       <Delivery/>
       <TotalPay/>
+      <Payment_Method/>
     </div>
   );
 }
