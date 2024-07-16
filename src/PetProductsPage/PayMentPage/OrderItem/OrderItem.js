@@ -1,6 +1,5 @@
 import React from "react";
 import "../OrderItem/OrderItem.css";
-import Orders from "../Delivery/Delivery"
 import TotalPay from '../TotalPay/TotalPay'
 import PayMockup from "../PayMockup";
 import { useState, useEffect } from "react";
