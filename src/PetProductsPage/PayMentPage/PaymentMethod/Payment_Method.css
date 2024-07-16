@@ -56,3 +56,10 @@
     width: 500px;
     font-size: 18px;
 }
+.bank{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bank select{width: 60%; margin: 0 auto;}
+.bank input{width: 60%; border-radius: 0; margin: 20px auto; height: 40px;}

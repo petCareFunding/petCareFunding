@@ -1,5 +1,6 @@
 import React from 'react';
 import "../PaymentMethod/Payment_Method.css"
+import PayMockup from '../PayMockup';
 
 export default function Payment_Method(){
     return(
@@ -22,6 +23,12 @@ export default function Payment_Method(){
                 <input type='radio' />
                 <span>카카오페이</span>
             </p>
+            </div>
+            <div className='bank'>
+                <select>
+                    <option>NH은행: {PayMockup.order.bank} 예금주명</option>
+                </select>
+                <input type='text' />
             </div>
         </div>
     )
