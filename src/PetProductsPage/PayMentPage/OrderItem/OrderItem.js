@@ -1,9 +1,11 @@
 import React from "react";
 import "../OrderItem/OrderItem.css";
+import Orders from "../Delivery/Delivery"
 import TotalPay from '../TotalPay/TotalPay'
 import PayMockup from "../PayMockup";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Delivery from '../Delivery/Delivery';
 
 export default function OrderItem() {
   const item = PayMockup;
@@ -44,6 +46,7 @@ export default function OrderItem() {
         </div>
         <button>수정</button>
       </div>
+      <Delivery/>
       <TotalPay/>
     </div>
   );
