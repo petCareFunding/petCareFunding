@@ -23,7 +23,7 @@ function SchoolMain(){
     const navigate = useNavigate();
     const GotoPostpage = ()=>{navigate('/school/postSchoolFunding')};
     const GotoMainpage = () =>{navigate('/')};
-
+    //하트가 죄다 바뀜 ㅜㅜ
     const handleHeart = (e)=>{
         setCountClick(countClick+1)
         if(countClick%2 !== 0 ){
