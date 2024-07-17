@@ -1,7 +1,7 @@
 .item-wrapper {
   width: 100%;
 }
-.item-detail {
+.itemdetail {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 200px;
