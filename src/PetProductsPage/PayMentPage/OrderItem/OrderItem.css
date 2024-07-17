@@ -21,24 +21,29 @@
 }
 .order-item {
   width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 30px auto;
   height: 300px;
   background-color: white;
 }
-.order-item h3{position: relative; top: 30px;}
 .order-item img {
-  width: 300px;
-  height: 200px;
-  margin-top: 50px;
-  margin-left: 30px;
-  float: left;
+  width: 45%;
+  height: 270px;
+}
+.order-prod{
+  width: 50%;
+  margin-left: 350px;
 }
 .order-item .title {
   width: 400px;
-  float: left;
   padding: 5px;
-  margin-top: 80px;
-  margin-left: 30px;
+}
+.order{
+  width: 50%;
+  margin-left: 350px;
+  margin-bottom: 20px;
 }
 .title p{padding: 5px;}
 .title .order-name{color: black;}
@@ -46,37 +51,32 @@
 .title .price {color: black;}
 .order-info {
   width: 60%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   overflow: hidden;
   background-color: white;
   margin: 0 auto;
 }
-.information {
-  width: 300px;
-  margin-left: 50px;
-  margin-top: 70px;
-}
+.information {width: 70%;}
 .information p {
-  float: left;
-  font-size: 20px;
+  font-size: 18px;
   padding: 5px;
 }
 .information p:nth-child(2) {
-  float: left;
   font-size: 18px;
+  font-weight: 600;
   color: #bdbdbd;
 }
 .information p:nth-child(3) {
-  float: left;
   font-size: 18px;
+  font-weight: 600;
   color: #bdbdbd;
 }
 button {
-  float: left;
   width: 100px;
   height: 30px;
-  position: relative;
-  bottom: 70px;
-  left: 300px;
 }
 .payment-button{
   width: 50%;
