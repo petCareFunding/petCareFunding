@@ -22,6 +22,7 @@ function SchoolMain(){
 
     const navigate = useNavigate();
     const Gopostpage = ()=>{navigate('/school/postSchoolFunding')};
+    const GotoMainpage = () =>{navigate('/')};
 
     const handleHeart = (e)=>{
         setCountClick(countClick+1)
@@ -36,7 +37,7 @@ function SchoolMain(){
 
     return(
         <div className="schoolmain">
-            <header className="scm-title">MEONG-GORITHM</header>
+            <header className="scm-title" onClick={GotoMainpage}>MEONG-GORITHM</header>
             <div className="local-search-container">
                 <input type="text" className="local-search" placeholder="지역 검색하기.."/>
                 <img src={process.env.PUBLIC_URL + './ion_search.png'} alt="돋보기아이콘" className="scm-searchbtn"></img>
