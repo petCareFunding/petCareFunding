@@ -4,8 +4,9 @@ import PayMockup from '../PayMockup';
 
 export default function Delivery(){
     return(
-        <div className='delivery'>
-            <h3>배송정보</h3>
+        <>
+                  <h3 className='delivery'>배송정보</h3>
+          <div className='delivery-wrapper'>
             <div className='delivery-info'>
                 <p className='delivery-name'>{PayMockup.order.name}</p>
                 <p className='delivery-phone'>{PayMockup.order.phone}</p>
@@ -21,5 +22,7 @@ export default function Delivery(){
             </div>
             <button className='delivery-button'>수정</button>
         </div>
+        </>
+      
     )
 }
