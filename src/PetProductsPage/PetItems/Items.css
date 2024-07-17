@@ -1,92 +1,37 @@
-.image-zigzag {
+*{margin: 0; padding: 0;}
+.image-zigzag{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item{
   width: 100%;
   margin-top: 100px;
+  display: flex;
+  align-items: center;
 }
-.image-zigzag img {
-  width: 45%;
-  border-radius: 20px;
+
+.item:nth-child(3){
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
 }
-.item:first-child {
-  width: 100%;
+.item img{
+  width: 90%;
 }
-.item:first-child img {
-  float: left;
-}
-.item:first-child .item-detail {
-  width: 750px;
+/* .item-detail{
   display: flex;
   flex-direction: column;
-  position: relative;
-  left: 200px; top: 100px;
-}
-.item:first-child .button{
-  font-size: 20px;
-  position: relative;
-  right: 90px; top: 400px;
-  
-}
-.item-detail .item-name {
-  width: 450px;
-  font-size: 20px;
-  font-weight: bold;
-}
-.item:nth-child(2) {
-  width: 100%;
-  position: relative;
-  top: 300px;
-}
-.item:nth-child(2) img {
-  float: right;
-}
-.item:nth-child(2) .item-detail {
-  width: 400px;
+} */
+.item:first-child{
   display: flex;
-  flex-direction: column;
-  text-align: left;
-  float: right;
-  margin-right: 30px;
-  position: relative;
-  right: 300px; bottom: 240px;
+  justify-content: space-around;
 }
-.item:nth-child(3) img{
-  position: relative;
-  top: 400px; right: 600px;
-}
-.item:nth-child(3) .item-detail {
-  width: 500px;
+.item:nth-child(2){
   display: flex;
-  flex-direction: column;
-  margin-left: 1300px;
-  position: relative;
-  bottom: 300px;
+  justify-content: space-around;
+  flex-flow: row-reverse;
 }
-.funding-title{
-  width: 100px;
-  height: 50px;
-  border-radius: 10px;
-  background-color: #FFEEAE;
-  text-align: center;
-  line-height: 50px;
-  font-size: 20px;
-  font-weight: bold;
-}
-.item-funding{
-  width: 450px;
-  height: 30px;
-  font-family: Lemon;
-  font-weight: bold;
-}
-.item-funding .funding{
-  font-size: 18px; 
- font-weight: bold;
- margin-right: 20px;
- }
- .FundingPeriod{
-  width: 300px;
-  font-family: Lemon;
-  font-weight: bold;
-}
-.FundingPeriod .period{
-  font-size: 18px;
-  margin-right: 10px;
+.item-detail:first-child{
+  width: 200px;
 }
