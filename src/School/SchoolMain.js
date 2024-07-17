@@ -3,6 +3,7 @@ import './SchoolMain.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import SchoolPost from "./SchoolPost.js";
+import { click } from "@testing-library/user-event/dist/click.js";
 
 
 
@@ -16,9 +17,21 @@ function SchoolMain(){
     const [month,setMonth] = useState([7,8,9,9]);
     const [date,setDate] = useState([22,6,16,13]);
     const [like,setLike] = useState([10,60,45,5]);
+    const [countClick,setCountClick] = useState(0);
+    const [clickHeart,setClickHeart] = useState('💛');
 
     const navigate = useNavigate();
     const Gopostpage = ()=>{navigate('/school/postSchoolFunding')};
+
+    const handleHeart = (e)=>{
+        setCountClick(countClick+1)
+        if(countClick%2 !== 0 ){
+            setClickHeart(('❤️'))
+        }
+        else{
+           setClickHeart(('💛'))
+        }
+    };
 
 
     return(
@@ -39,15 +52,20 @@ function SchoolMain(){
                         <section className="left" key={i}>
                         <img className="leftphotos" src = {process.env.PUBLIC_URL + './Mschoolphoto'+(i+1)+'.jpg'}></img>
                         <div className="scm-text-container">
-                            <h4>펀딩 진행중</h4>
+                            <h4 id="scm-funding-status">펀딩 진행중</h4>
                             <h2>{title[i]}</h2>
-                            <p>펀딩인원     <span className="scm-fund scm-People">{people[i]}/20명</span></p>
-                            <p>펀딩기간     <span className="scm-fund scm-Date">{month[i]}월{date[i]}일</span></p>
-                            <p id="scm-heart">❤️ 현재 {like[i]}명이 찜했어요!</p>
+                            <p id="scm-funding-people-status">펀딩인원<span className="scm-fund scm-People">{people[i]}/20</span></p>
+                            <p id="scm-funding-date-status">펀딩기간<span className="scm-fund scm-Date">{month[i]}월{date[i]}일</span></p>
+                            <p id="scm-heart">💛 현재 {like[i]}명이 찜했어요!</p>
+                            <div className="scm-user-heart">
+                                <span id="empty-heart" onClick={handleHeart}>{clickHeart}</span>
+                                <span id="nado-text"> 나도 찜하기</span>
+                            </div>
                         </div>
                         </section>
                         <hr/>
-                    </div>)
+                    </div>
+                    )
                 })}
             </main>
             <footer className="scm-footer">
