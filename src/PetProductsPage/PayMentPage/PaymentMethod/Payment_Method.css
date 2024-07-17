@@ -1,65 +1,78 @@
 .paymethod {
   width: 60%;
+  overflow: hidden;
   margin: 0 auto;
   background-color: white;
 }
-.paymethod .method {
-  width: 200px;
-  height: 30px;
-  line-height: 30px;
-  position: relative;
-  top: 30px;
+.method{
+  width: 50%;
+  margin-left: 310px;
+  margin-bottom: 20px;
 }
 .payment {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 150px;
 }
-.card-payment {
-  width: 270px;
+.payment .card-payment {
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  justify-content: center;
 }
-.card-payment span {
-  width: 500px;
-  font-size: 18px;
-}
-
+.card-payment  span{width: 150px;}
+.card-payment  input{width: 150px;}
 .virtual-account {
-  width: 270px;
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  justify-content: center;
 }
-.virtual-account span {
-  width: 500px;
-  font-size: 18px;
+.virtual-account span{width: 100px;}
+.virtual-account input{width: 100px;}
+.paymethod-bottom{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 150px;
 }
-.Deposit_without_bankbook {
-  width: 270px;
+.Deposit_without_bankbook{
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
 }
-.Deposit_without_bankbook span {
-  width: 500px;
-  font-size: 18px;
-}
-.Kakao_Pay {
-    width: 270px;
+.Kakao_Pay{
   display: flex;
   align-items: center;
-  font-size: 18px;
-  margin-bottom: 20px;
+  justify-content: center;
 }
-.Kakao_Pay span{
-    width: 500px;
-    font-size: 18px;
+.Deposit_without_bankbook span{
+  width: 100px;
 }
+.Deposit_without_bankbook input{
+  width: 200px;
+}
+.Kakao_Pay span{width: 100px;}
+.Kakao_Pay input{width: 150px;}
 .bank{
-  width: 100%;
+  width: 60%;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
 }
-.bank select{width: 60%; margin: 0 auto;}
-.bank input{width: 60%; border-radius: 0; margin: 20px auto; height: 40px;}
+.bank select{
+  width: 50%;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+.bank input{
+  width: 50%;
+  height: 40px;
+  border-radius: 0;
+  margin-left: 60px;
+  border:  1px solid #ccc;
+}
