@@ -13,7 +13,10 @@ function SchoolPost(){
     const [fundingDate1, setFundingDate1] = useState('');
     const [fundingDate2, setFundingDate2] = useState('');
     const [info, setInfo] = useState('');
-
+    const [postImg, setPostImg] = useState([]); 
+    const [preview, setPreview] = useState([]); 
+    const navigate = useNavigate();
+    const Backschool = ()=>{navigate('/school')};
     
     const handleSubmit = ()=>{
         if( !title|| !person|| ! fundingDate1|| !fundingDate2|| !info){
@@ -25,11 +28,7 @@ function SchoolPost(){
         };
     }; 
     
-    const navigate = useNavigate();
-    const Backschool = ()=>{navigate('/school')};
 
-    const [postImg, setPostImg] = useState([]); 
-    const [preview, setPreview] = useState([]); 
 
 
     const handleUpload = (e)=>{
