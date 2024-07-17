@@ -1,51 +1,80 @@
 .total-payment {
-    width: 60%;
-    height: 320px;
-    margin: 0 auto;
-    overflow: hidden;
-    background-color: white;
-  }
-  .totalpay {
-    width: 100%;
-    margin-top: 30px;
-    margin-left: 40px;
-  }
-  .totalpay p {
-    padding: 5px;
-    float: left;
-  }
-  .totalpay .price-title {
+  width: 60%;
+  height: 230px;
+  background-color: white;
+  margin: 0 auto;
+}
+.total-title{
+  width: 50%;
+  margin-left: 340px;
+  margin-bottom: 20px;
+}
+.totalpay {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  align-items: center;
+}
+.price {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+.totalpay .coupon {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.price .price-title{
     font-size: 16px;
-    font-weight: 700;
-    color: #919191;
-  }
-  .totalpay .coupone-name {
-      font-size: 16px;
-      font-weight: 700;
-      color: #919191;
-  }
-  .totalpay .point-name{
-      font-size: 16px;
-      font-weight: 700;
-      color: #919191;
-  }
-  .totalpay .delivery-name{
-      font-size: 16px;
-      font-weight: 700;
-      color: #919191;
-  }
-  .totalpay .product-price{
-      font-size: 18px;
-  }
-  .totalpay .product-coupone{font-size: 18px;}
-  .totalpay .product-point{font-size: 18px;}
-  .totalpay .delivery-peice{font-size: 18px;}
-  .total{
-      width: 100%;
-      overflow: hidden;
-      border-top: 1px solid #ccc;
-      margin-top: 10px;
-  }
-  .total p{
-      margin-top: 20px;
-  }
+    font-weight: 600;
+    color: #ccc;
+}
+.price .product-price{
+  font-size: 16px;
+  font-weight: bold;
+}
+.coupon .coupone-name{
+  font-size: 16px;
+  color: #ccc;
+}
+.coupon .product-coupone{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.point .point-name{
+  font-size: 16px;
+  color: #ccc;
+}
+.totalpay .delivery{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: 15px;
+  padding: 10px;
+}
+.totalpay .point {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.point .product-point{font-size: 16px; font-weight: bold;}
+.delivery .delivery-name{
+  font-size: 16px;
+  color: #ccc;
+}
+.delivery .delivery-peice{
+  font-size: 16px;
+
+}
+.totalpay .total{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 210px;
+}
