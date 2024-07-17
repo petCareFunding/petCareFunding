@@ -56,7 +56,7 @@ function ItemDetail() {
   return (
     <div className="item-wrapper">
       <PetHeader />
-      <div className="item-detail" key={image.id}>
+      <div className="itemdetail" key={image.id}>
         <img src={image.imgURL} alt={image.name} />
         <div className="item-txt">
           <p className="Supplies">{image.name}</p>
