@@ -3,7 +3,7 @@ import "../Footer/Footer.css"
 
 export default function Footer(){
     return(
-        <footer className="footer">
+        <footer className="pet-footer">
         <div className="footer-text first">
             <p>환불규정</p>
             <p><br/>이 상품에 대한 환불은 어쩌구저쩌구 처리해서 이렇게 저렇게 할 거고 
