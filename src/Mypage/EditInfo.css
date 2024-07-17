@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
-.info-title {
+.myinfo-title {
     text-align: center;
     margin-top: 30px;
     font-size: 36px;
@@ -15,30 +15,30 @@
     font-weight: bold;
 }
 
-.form-container {
+.myinfo-form-container {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
 }
 
-.form-section {
+.myinfo-form-section {
     flex: 1;
     margin-right: 20px;
 }
 
-.form-sub {
+.myinfo-form-sub {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.form-sub label {
+.myinfo-form-sub label {
     width: 120px; /* 레이블의 고정 너비 설정 */
     font-size: 18px;
     font-weight: bold;
 }
 
-.form-sub input {
+.myinfo-form-sub input {
     flex: 1;
     padding: 10px;
     margin-left: 10px;
@@ -48,24 +48,24 @@
     width: 100px;
 }
 
-.phone-number {
+.myinfo-phone-number {
     display: flex;
     align-items: center;
     flex: 1;
 }
 
-.phone-number input {
+.myinfo-phone-number input {
     width: 60px;
     text-align: center;
     margin-left: 10px;
 }
 
-.phone-number span {
+.myinfo-phone-number span {
     margin: 0 10px;
     font-size: 18px;
 }
 
-.profile-section {
+.myinfo-profile-section {
     flex: 0 0 300px;
     text-align: center;
 }
@@ -93,7 +93,7 @@
     cursor: pointer;
     font-size: 16px;
 }
-.pickphoto{
+.myinfo-pickphoto{
     background-color:#FFEEAE ;
     width: 30px;
     color: black;
@@ -102,7 +102,7 @@
     margin-top: 30px;
 }
 
-.circle{
+.myinfo-circle{
     margin-top: 100px;
     margin-left: 40px; 
     width: 250px;
@@ -119,7 +119,7 @@
     object-fit: cover;
 }
 
-#cpwbtn{
+#myinfo-cpwbtn{
     background-color: #FFEEAE;
     color: black;
     border: none;
