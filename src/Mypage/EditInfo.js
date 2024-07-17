@@ -5,16 +5,21 @@ import './EditInfo.css';
 function EditInfo() {
 
     
-    const [imageSrc, setImageSrc] = useState(null);
+    const [postImg, setPostImg] = useState(null);
+    const [preview, setPreview] = useState(null);
     const [befpassword, setBefpassword] = useState('');
     const [aftpassword, setAftpassword] = useState('');
 
     const handleImageChange = (e)=>{
-        const reader = new FileReader();
-        reader.readAsDataURL(e.target.files[0]);
-            
-        reader.onload = (event)=>{
-            setImageSrc(event.target.result);
+        const file = e.target.files[0];  //모르겟더염
+        if(file){
+            setPostImg(file);
+            const reader = new FileReader(); 
+            reader.onload = ()=>{
+                setPreview(reader.result);
+            };
+            reader.readAsDataURL(file);
+
         }
     };
     
@@ -86,7 +91,7 @@ function EditInfo() {
                 </div>
                 <div className="myinfo-profile-section">
                     <div id='myprofile-container'>
-                        <div className='myinfo-circle'>{<img src = {imageSrc ? imageSrc : null } id='myinfo-circle'/>}</div>
+                        <div className='myinfo-circle'>{<img src = {postImg} />}</div>
                         <label className='myinfo-pickphoto' htmlFor='myprofile'>사진 선택하기</label>
                     </div>
                     <input type='file' id='myprofile' name='myprofile' accept='image/*' 

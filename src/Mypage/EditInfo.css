@@ -109,6 +109,7 @@
     height: 250px;
     border-radius: 50%;
     background-color: rgba(128, 128, 128, 0.614);
+    object-fit: cover;
 }
 #circle{
     /* margin-top: 100px;*/
