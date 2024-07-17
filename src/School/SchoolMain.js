@@ -3,7 +3,7 @@ import './SchoolMain.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import SchoolPost from "./SchoolPost.js";
-import { click } from "@testing-library/user-event/dist/click.js";
+// import { click } from "@testing-library/user-event/dist/click.js";
 
 
 
@@ -21,16 +21,16 @@ function SchoolMain(){
     const [clickHeart,setClickHeart] = useState('💛');
 
     const navigate = useNavigate();
-    const Gopostpage = ()=>{navigate('/school/postSchoolFunding')};
+    const GotoPostpage = ()=>{navigate('/school/postSchoolFunding')};
     const GotoMainpage = () =>{navigate('/')};
 
     const handleHeart = (e)=>{
         setCountClick(countClick+1)
         if(countClick%2 !== 0 ){
-            setClickHeart(('❤️'))
+            setClickHeart(('💛'))
         }
         else{
-           setClickHeart(('💛'))
+           setClickHeart(('❤️'))
         }
     };
 
@@ -43,7 +43,7 @@ function SchoolMain(){
                 <img src={process.env.PUBLIC_URL + './ion_search.png'} alt="돋보기아이콘" className="scm-searchbtn"></img>
             </div>
             <div className="scm-postbtn-container">
-                <button id="scm-postbtn" onClick={Gopostpage}>펀딩 등록하기</button>
+                <button id="scm-postbtn" onClick={GotoPostpage}>펀딩 등록하기</button>
             </div>
             <hr/>
             <main className="scm-container">
