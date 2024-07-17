@@ -28,8 +28,8 @@ export default function OrderItem() {
   return (
     <div className="OrderItem-wrapper">
       <h3 className='order-title'>결제하기</h3>
+      <h3 className='order-prod'>주문 상품 정보</h3>
       <div className="order-item" key={product.id}>
-        <h3>주문 상품 정보</h3>
         <img src={product.imeageURL} alt={product.name} />
         <div className="title">
           <p className="order-name">{product.name}</p>
@@ -37,8 +37,8 @@ export default function OrderItem() {
           <p className="price">{product.price}원</p>
         </div>
       </div>
+      <h3 className='order'>주문자 정보</h3>
       <div className="order-info">
-        <h3>주문자 정보</h3>
         <div className="information">
           <p className="info-name">{item.order.name}</p>
           <p className="info-phone">{item.order.phone}</p>
