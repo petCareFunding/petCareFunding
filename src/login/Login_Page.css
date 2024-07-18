@@ -1,0 +1,124 @@
+.login-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 600px;
+    height: 800px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 4px gray;
+    border: none;
+    
+}
+.login{
+    position: absolute;
+    top: 63px;
+    left: 84px;
+    font-size: 30px;
+    
+    
+}
+.email{
+    position: absolute;
+    top: 175px;
+    left: 90px;
+    font-size: 14px;
+    
+}
+.password{
+    position: absolute;
+    top: 260px;
+    left: 90px;
+    font-size: 14px;
+    
+}
+.search{
+    position: absolute;
+    top: 335px;
+    right: 94px;
+    font-size: 11px;
+    
+}
+.or{
+    position: absolute;
+    top:444px;
+    left: 280px; 
+    font-weight: bold;
+}
+.join_q{
+    position: absolute;
+    margin-top: 30px;
+    left: 227px;
+    
+}
+
+.join{
+    position: absolute;
+    margin-top: 60px;
+    left: 264px;
+    
+}
+.join a {
+    color: black;
+    text-decoration-line: none;
+}
+.Email_input input{
+    border-radius: 10px;
+    border: 1px solid rgb(201, 201, 201);
+    margin-top: 200px;
+    width:  70%;
+    height: 40px;
+}
+.Password_input input{
+    border-radius: 10px;
+    border: 1px solid rgb(201, 201, 201);
+    margin-top: 40px;
+    width:  70%;
+    height: 40px;
+}
+.submit_button input{
+    margin-top: 50px;
+    width:  72%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FBE99F;
+    font-size: 20px;
+    font-weight: bold;
+}
+.kakao-img{
+    position: absolute;
+    top: 492px;
+    left: 170px;
+}
+.kakao_button input{
+    margin-top: 55px;
+    width:  72%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FEE500;
+    font-size: 20px;
+    font-weight: bold;
+}
+.naver-img{
+    position: absolute;
+    top: 569px;
+    left: 173px;
+    color: white;
+}
+.naver_button input{
+    margin-top: 25px;
+    width:  72%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #03C75A;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    
+}
+
