@@ -14,7 +14,7 @@
   text-align: center;
   margin-top: 30px;
 }
-.order-title{
+.order-title {
   width: 200px;
   margin: 0 auto;
   font-size: 18px;
@@ -22,17 +22,18 @@
 .order-item {
   width: 60%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 30px auto;
   height: 300px;
   background-color: white;
 }
 .order-item img {
-  width: 45%;
+  width: 35%;
   height: 270px;
+  border-radius: 20px;
 }
-.order-prod{
+.order-prod {
   width: 50%;
   margin-left: 350px;
 }
@@ -40,29 +41,53 @@
   width: 400px;
   padding: 5px;
 }
-.order{
+.order {
   width: 50%;
   margin-left: 350px;
   margin-bottom: 20px;
 }
-.title p{padding: 5px;}
-.title .order-name{color: black;}
-.title .quantity{color: black;}
-.title .price {color: black;}
-.order-info {
-  width: 60%;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  overflow: hidden;
-  background-color: white;
-  margin: 0 auto;
+
+.title p {
+  padding: 5px;
 }
-.information {width: 70%;}
+.title .order-name {
+  color: black;
+  font-size: 18px;
+  width: 300px;
+  text-align: left;
+  font-weight: 800;
+}
+.title .quantity {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+}
+.title .price {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+}
+.order-info {
+width: 60%;
+height: 200px;
+margin: 0 auto;
+background-color: white;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.information {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
 .information p {
   font-size: 18px;
   padding: 5px;
+  text-align: left;
+  font-weight: 600;
 }
 .information p:nth-child(2) {
   font-size: 18px;
@@ -74,11 +99,16 @@
   font-weight: 600;
   color: #bdbdbd;
 }
+.information p:nth-child(4) {
+  font-size: 18px;
+  font-weight: 600;
+  color: #bdbdbd;
+}
 button {
   width: 100px;
   height: 30px;
 }
-.payment-button{
+.payment-button {
   width: 50%;
   height: 70px;
   line-height: 70px;
