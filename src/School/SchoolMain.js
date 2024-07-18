@@ -1,12 +1,22 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import './SchoolMain.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import SchoolPost from "./SchoolPost.js";
 // import { click } from "@testing-library/user-event/dist/click.js";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart as heartIcon } from '@fortawesome/free-solid-svg-icons';
+import { faHeart as emptyheartIcon } from '@fortawesome/free-regular-svg-icons';
 
 
+const saveHeartsToLocalStorage = (hearts) => {
+    localStorage.setItem('hearts', JSON.stringify(hearts));
+};
 
+const loadHeartsFromLocalStorage = () => {
+    const hearts = localStorage.getItem('hearts');
+    return hearts ? JSON.parse(hearts) : null;
+};
 
 function SchoolMain(){
 
@@ -16,23 +26,30 @@ function SchoolMain(){
     const [people,setpeople] = useState([0, 0, 0, 0]);
     const [month,setMonth] = useState([7,8,9,9]);
     const [date,setDate] = useState([22,6,16,13]);
-    const [like,setLike] = useState([10,60,45,5]);
-    const [countClick,setCountClick] = useState(0);
-    const [clickHeart,setClickHeart] = useState('💛');
+    const [likes,setLikes] = useState([10,60,45,5]);
+    const [hearts, setHearts] = useState(() => loadHeartsFromLocalStorage() || [false, false, false, false]);
 
     const navigate = useNavigate();
     const GotoPostpage = ()=>{navigate('/school/postSchoolFunding')};
     const GotoMainpage = () =>{navigate('/')};
-    //하트가 죄다 바뀜 ㅜㅜ
-    const handleHeart = (e)=>{
-        setCountClick(countClick+1)
-        if(countClick%2 !== 0 ){
-            setClickHeart(('💛'))
-        }
-        else{
-           setClickHeart(('❤️'))
-        }
+
+    useEffect(() => {
+        saveHeartsToLocalStorage(hearts);
+    }, [hearts]);
+
+    const handleHeartClick = (index) => {
+        const newHearts = [...hearts];
+        newHearts[index] = !newHearts[index];
+        setHearts(newHearts);
+
+        const newLikes = [...likes];
+        newLikes[index] = newHearts[index] ? likes[index] + 1 : likes[index] - 1;
+        setLikes(newLikes);
     };
+
+
+
+
 
 
     return(
@@ -57,9 +74,14 @@ function SchoolMain(){
                             <h2>{title[i]}</h2>
                             <p id="scm-funding-people-status">펀딩인원<span className="scm-fund scm-People">{people[i]}/20</span></p>
                             <p id="scm-funding-date-status">펀딩기간<span className="scm-fund scm-Date">{month[i]}월{date[i]}일</span></p>
-                            <p id="scm-heart">💛 현재 {like[i]}명이 찜했어요!</p>
+                            <p id="scm-heart">💛 현재 {likes[i]}명이 찜했어요!</p>
                             <div className="scm-user-heart">
-                                <span id="empty-heart" onClick={handleHeart}>{clickHeart}</span>
+                                <span
+                                        id="empty-heart"
+                                        onClick={() => handleHeartClick(i)}>
+                                    
+                                        <FontAwesomeIcon icon={hearts[i] ? heartIcon : emptyheartIcon} color={hearts[i] ? "red" : "black"}  />
+                                </span>
                                 <span id="nado-text"> 나도 찜하기</span>
                             </div>
                         </div>
