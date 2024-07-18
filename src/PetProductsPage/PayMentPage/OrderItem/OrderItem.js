@@ -42,6 +42,7 @@ export default function OrderItem() {
         <div className="information">
           <p className="info-name">{item.order.name}</p>
           <p className="info-phone">{item.order.phone}</p>
+          <p className="info-address">{item.order.shippingAddress}</p>
           <p className="info-email">{item.order.email}</p>
         </div>
         <button>수정</button>
