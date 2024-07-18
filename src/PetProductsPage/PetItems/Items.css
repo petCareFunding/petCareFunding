@@ -96,3 +96,37 @@
 }
 .FundingPeriod span{margin-right: 20px;}
 
+@media screen and (max-width:600px) {
+  .item{
+    display: flex;
+    flex-direction: column;
+  }
+  .item:first-child {width: 100%;}
+  .item-detail{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+  .item-detail .funding-title{
+    width: 100px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .item-detail .item-name{
+    font-size: 18px;
+    text-align: center;
+  }
+  .item:nth-child(2){
+    width: 100%; 
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .item:nth-child(3) {
+    width: 100%;
+    margin: 50px auto;
+  }
+}
