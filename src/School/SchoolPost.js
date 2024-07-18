@@ -25,7 +25,9 @@ function SchoolPost(){
         }
         else{
             alert('펀딩이 등록되었습니다');
+            Backschool();
         };
+        
     }; 
     
 
