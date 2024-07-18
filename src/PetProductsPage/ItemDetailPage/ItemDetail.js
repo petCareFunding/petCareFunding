@@ -19,9 +19,9 @@ function ItemDetail() {
   const [resId, setResId] = useState('');
   console.log("imageId: ", imageId);
 
-  const handleOptionClick = () =>  {
-    return ''
-  }
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+  };
 
   // console.log("imageId: ", imageId);
 
@@ -43,12 +43,6 @@ function ItemDetail() {
 
   // console.log("image.imgURL:", image.imgURL);
   console.log("imageId: ", imageId);
-
-
-
-  
-
- 
 
   if (!image) {
     return <div>상품을 찾을 수 없습니다</div>;
@@ -122,6 +116,7 @@ function ItemDetail() {
             <p onClick={buttonclick} className='funding-but'>펀딩구매하기</p>
         </div>
       </div>
+      </div>
       <div className="detail-image">
         <img src={image.detailURL} />
         <img src={image.detailURL02} />
@@ -129,8 +124,7 @@ function ItemDetail() {
         <img src={image.detailURL04} />
         <img src={image.detailURL05} />
       </div>
-      {/* <Footer /> */}
-      </div>
+         <Footer />
     </div>
   )
 }
