@@ -5,11 +5,11 @@ body .schoolmain{
 }
 
 
-.title{
+.scm-title{
     text-align: center;
     justify-content: center;
     margin-top: 30px;
-    font-size: 30PX;
+    font-size: 30px;
     color: #FFEEAE;
     cursor: pointer;
 }
@@ -17,7 +17,8 @@ body .schoolmain{
 .local-search-container{
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+    margin-top: 20px;
 }
 .local-search{
     border-radius: 500px;
@@ -27,12 +28,14 @@ body .schoolmain{
     padding-left: 10px;
 }
 
-.searchbtn{
+.scm-searchbtn{
     width: 30px;
     height: 30px;
     padding-left: 10px;
     cursor: pointer;
 }
+
+
 
 .left{
     display: flex;
@@ -47,10 +50,10 @@ body .schoolmain{
     width: 400px;
     height: 300px;
     border-radius: 100px;
-    margin-left: 200px;
+    margin-left: 400px;
     margin-top: 50px;
     object-fit: cover;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .left h4 h2{
@@ -66,17 +69,17 @@ body .schoolmain{
     cursor: pointer;
 }
 
-.text-container{
+.scm-text-container{
     display: flex;
     flex-direction: column;
     
 }
 
-.fund{
+.scm-fund{
     padding-left: 30px;
 }
 
-.footer{
+.scm-footer{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -88,7 +91,7 @@ body .schoolmain{
 
 
 
-.sns{
+.scm-sns{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -97,7 +100,7 @@ body .schoolmain{
     padding: 5px;
     cursor: pointer;
 }
-#postbtn{
+#scm-postbtn{
     background-color: white;
     border: solid 5px #FFEEAE;
     border-radius: 30px;
@@ -106,7 +109,47 @@ body .schoolmain{
     margin-bottom: 10px;
     margin-right: 50px;
 }
-.postbtn-container{
+.scm-postbtn-container{
     display: flex;
     justify-content: end;
+}
+
+.footer-text-first, .footer-text-second, .footer-text-third{
+    margin-top: 50px;
+}
+
+.footer-text-second{
+    line-height: 33px;
+}
+
+#scm-funding-status{
+    background-color: #FFEEAE;
+    color: black;
+    width: 130px;
+    height: 20px;
+}
+
+#scm-funding-date-status{
+    margin-left: 17px;
+}
+
+.scm-user-heart{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#empty-heart{
+    font-size: 20px;
+    padding-left: 3px;
+    cursor: pointer;
+    margin-left: -2px;
+
+} 
+
+
+
+#nado-text{
+    margin-left: 7px;
+    margin-top: 5px;
 }
