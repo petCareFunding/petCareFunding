@@ -1,125 +1,88 @@
-.item-wrapper {
+.item-wrapper{
   width: 100%;
 }
-.itemdetail {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 200px;
+.itemdetail{
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
-img{
-  width: 80%;
+.itemdetail img{
+  width: 45%;
   height: 450px;
   border-radius: 20px;
-  margin-left: 30px;
 }
-
-.item-txt {
-  width: 40%;
-    position: relative;
-    top: 20px; right: 100px;
+.item-txt{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px;
 }
-p {
-  width: 400px;
-  text-align: left;
+.item-txt .Supplies{
   font-size: 20px;
   font-weight: bold;
+  padding: 10px;
 }
-span {
-  margin-right: 20px;
+.Funding-progress{
+    font-size: 18px;
+    padding: 10px;
+    font-family: Lemon;
+    font-weight: bold;
 }
-.button {
-  background-color: #ffeeae;
-  width: 400px;
+.Funding-progress span{margin-right: 20px; }
+.funding-pepole {
+  font-size: 18px;
+  padding: 10px;
+  font-family: Lemon;
+  font-weight: bold;
+}
+.funding-pepole span{margin-right: 20px;}
+.detail-image{
+    width: 40%;
+    margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+}
+.option-title{
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.funding-option{
+  width: 100%;
+height: 200px;
+  display: flex;
+}
+.funding-option > div {
+  height: 200px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.funding-option > div.selected {
+  background-color:  #D4AF37; 
+}
+.funding-shop{
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.funding-shop .funding-but{
+  width: 200px;
   height: 50px;
+  font-size: 20px;
+  background-color: #D4AF37;
   text-align: center;
   line-height: 50px;
   cursor: pointer;
 }
-.button .link{text-decoration: none;}
-.button:hover{color: rgba(0, 0, 255, 0.493);}
-.detail-image{width: 50%; margin-left: 600px;}
-.detail-image img{
-    width: 90%;
-    margin-top: 100px;
-}
-.detail-image:nth-child(3) img{
-  width: 100%;
-}
-.option-title{
-  width: 200px;
-  font-size: 20px;
-  font-weight: bold;
-  display: block;
-  margin-top: 30px;
-  position: relative;
-  right: 60px;
-}
-.option-one p{
-  width: 300px;
-  font-size: 14px;
-  font-weight: bold;
-}
-.option-two p{
-  width: 300px;
-  font-size: 14px;
-  font-weight: bold;
-}
-.option-three p{
-  width: 300px;
-  font-size: 14px;
-  font-weight: bold;
-}
-.funding-option{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 20px;
-  align-items: flex-start; 
-}
-.funding-option > div {
-  width: 95%;
-  height: 170px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-  cursor: pointer; 
-}
-
-.funding-option > div.selected {
-  max-height: 170px;
-  background-color: #ffeeae; 
-}
-.funding-shop{
-  width: 400px;
-  margin-left: 100px;
-  height: 50px;
-}
-.funding-shop .shop-icon{
-  font-size: 30px;
-  text-align: center;
-  float: left;
-  margin-top: 10px;
-}
-.funding-shop .funding-but{
-  width: 200px;
-  text-align: center;
-  font-size: 20px;
-  background-color: #ffeeae;
-  margin-left: 100px;
-  padding: 10px;
-  cursor: pointer;
-}
-.funding-but:hover{
-  color: aqua;
-}
-
-.funding-shop{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left:  40px;
-  margin-top: 20px;
-}
-
-
-
+.funding-but:hover{color: white;}
