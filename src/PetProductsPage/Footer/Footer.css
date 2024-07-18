@@ -42,4 +42,5 @@
         display: flex;
         justify-content: center;
     }
+    .sns{width:5%; height: 20px;}
 }
