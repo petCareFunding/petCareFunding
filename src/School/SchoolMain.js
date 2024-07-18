@@ -3,7 +3,6 @@ import './SchoolMain.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import SchoolPost from "./SchoolPost.js";
-// import { click } from "@testing-library/user-event/dist/click.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart as heartIcon } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as emptyheartIcon } from '@fortawesome/free-regular-svg-icons';
@@ -48,7 +47,7 @@ function SchoolMain(){
     };
 
 
-
+    
 
 
 
