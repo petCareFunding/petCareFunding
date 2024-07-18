@@ -98,9 +98,11 @@
 
 @media screen and (max-width:600px) {
   .item{
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
+  .item img{width: 100%;}
   .item:first-child {width: 100%;}
   .item-detail{
     width: 100%;
@@ -117,19 +119,20 @@
     font-size: 18px;
     text-align: center;
   }
+  .item:first-child img{width: 75%; margin: 0 auto;}
   .item:nth-child(2){
     width: 100%; 
     margin: 50px auto;
     display: flex;
     flex-direction: column;
   }
-
+.item:nth-child(2) img{width: 75%; border-radius: 20px; margin: 0 auto;}
   
   .item:nth-child(3) {
     width: 100%;
     margin: 50px auto;
   }
   .item:nth-child(3) img{
-    width: 90%;
+    width: 75%;
   }
 }
