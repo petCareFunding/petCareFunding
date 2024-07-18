@@ -14,3 +14,12 @@ input{
     margin-top: 10px;
 }
 .icon{font-size: 25px;}
+
+@media screen and (max-width:600px){
+    .header{
+        width: 100%;
+    }
+    .header input{
+        width: 65%;
+    }
+}
