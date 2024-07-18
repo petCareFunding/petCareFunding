@@ -18,3 +18,28 @@
     background-color: #FFEEAE;
     justify-content: space-around;
 }
+@media screen and (max-width:600px){
+    .pet-footer{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-text .refund{
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    .footer-text .refund-text{
+        width: 70%;
+        margin: 0 auto;
+        font-weight: 600;
+    }
+    .second .Terms-of-Use{
+        padding: 5px;
+    }
+    .three {
+        display: flex;
+        justify-content: center;
+    }
+}
