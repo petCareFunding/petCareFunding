@@ -21,10 +21,10 @@ export default function TotalPayMent() {
 
   return (
     <>
-      <h3 className="total-title">최종 결제금액</h3>
         <div className="total-payment">
       {product && (
         <div className="totalpay" key={product.id}>
+            <p className="total-title">최종 결제금액</p>
           <div className="price">
             <p className="price-title">상품가격</p>
             <p className="product-price">{product.price}원</p>
