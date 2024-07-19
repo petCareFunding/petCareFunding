@@ -23,12 +23,7 @@ function ItemDetail() {
     setSelectedOption(option);
   };
 
-  // console.log("imageId: ", imageId);
-
-  //console.log("image.imgURL:", mockup[0].imgURL)
-
   useEffect(() => {
-    // console.log("image.imgURL:", image.imgURL);
     const foundImage = mockup.find(
       (image) => image.id === parseInt(imageId, 10)
     );
@@ -41,7 +36,6 @@ function ItemDetail() {
     navigate(`/PayMentPage/${imageId}`);
   };
 
-  // console.log("image.imgURL:", image.imgURL);
   console.log("imageId: ", imageId);
 
   if (!image) {
