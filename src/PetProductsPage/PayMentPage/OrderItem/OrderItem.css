@@ -40,6 +40,8 @@
 .order-item .title {
   width: 400px;
   padding: 5px;
+  display: flex;
+  flex-direction: column
 }
 .order {
   width: 50%;
@@ -64,6 +66,7 @@
   text-align: left;
 }
 .title .price {
+  width: 20%;
   color: black;
   font-size: 18px;
   font-weight: 700;
@@ -79,7 +82,7 @@ align-items: center;
 justify-content: space-evenly;
 }
 .information {
-  width: 70%;
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -90,19 +93,19 @@ justify-content: space-evenly;
   font-weight: 600;
 }
 .information p:nth-child(2) {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  color: #bdbdbd;
+  color: #929292;
 }
 .information p:nth-child(3) {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  color: #bdbdbd;
+  color: #929292;
 }
 .information p:nth-child(4) {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  color: #bdbdbd;
+  color: #929292;
 }
 button {
   width: 100px;
