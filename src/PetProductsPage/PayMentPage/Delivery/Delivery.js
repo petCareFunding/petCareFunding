@@ -5,9 +5,9 @@ import PayMockup from '../PayMockup';
 export default function Delivery(){
     return(
         <>
-                  <h3 className='delivery'>배송정보</h3>
           <div className='delivery-wrapper'>
             <div className='delivery-info'>
+            <p className='delivery'>배송정보</p>
                 <p className='delivery-name'>{PayMockup.order.name}</p>
                 <p className='delivery-phone'>{PayMockup.order.phone}</p>
                 <p className='delivery-address'>{PayMockup.order.shippingAddress}</p>
