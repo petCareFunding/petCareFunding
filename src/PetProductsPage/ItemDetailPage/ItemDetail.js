@@ -64,7 +64,7 @@ function ItemDetail() {
               }`}
               onClick={() => handleOptionClick("option-one")}
             >
-              <p>
+              <p className='option-price'>
                 <span>가격:</span>
                 {image.price}원
               </p>
@@ -80,7 +80,7 @@ function ItemDetail() {
               onClick={() => handleOptionClick("option-two")}
             >
               <p>
-                <span>가격:</span>
+                <span className='option-price'>가격:</span>
                 {image.price}원
               </p>
               <p>{image.optionTitle02}</p>
@@ -95,7 +95,7 @@ function ItemDetail() {
               onClick={() => handleOptionClick("option-three")}
             >
               <p>
-                <span>가격:</span>
+                <span className='option-price'>가격:</span>
                 {image.price}원
               </p>
               <p>{image.optionTitle03}</p>
