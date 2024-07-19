@@ -11,8 +11,8 @@ export default function Payment_Method() {
 
   return (
     <>
-      <h3 className='method'>결제방법</h3>
       <div className='paymethod'>
+      <h3 className='method'>결제방법</h3>
         <div className='payment'>
           <label className='card-payment'>
             <input 
