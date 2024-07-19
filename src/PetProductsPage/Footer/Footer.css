@@ -61,3 +61,11 @@
     }
     .three img{width: 3%; margin-left: 20px;}
 }
+@media screen and (min-width: 1201px) {
+    .footer-text{margin-top: 100px;}
+    .footer-text .refund-text{
+        width: 500px;
+        text-align: left;
+    }
+    .sns{width: 30px;}
+}
