@@ -1,12 +1,12 @@
 .paymethod {
   width: 60%;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 30px auto;
   background-color: white;
 }
 .method{
   width: 50%;
-  margin-left: 310px;
+  margin-left: 60px;
   margin-bottom: 20px;
 }
 .payment {
