@@ -30,7 +30,7 @@ export default function OrderItem() {
       <div className="order-item" key={product.id}>
         <img src={product.imeageURL} alt={product.name} />
         <div className="title">
-        <p className="order-prod">{item.order.productinfo}</p>
+        <p className="order-prod">상품 상세정보</p>
           <p className="order-name">{product.name}</p>
           <p className="quantity">{product.quantity}개</p>
           <p className="price">{product.price}원</p>
