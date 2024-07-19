@@ -110,3 +110,35 @@ height: 200px;
   .funding-shop{margin-top: 270px;}
   .detail-image{width: 100%;}
 }
+@media screen and (max-width: 600px) {
+  .itemdetail{
+    display: flex;
+    flex-direction: column;
+  }
+  .itemdetail img{
+    width: 95%;
+    height: 300px;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .option-title{margin-left: 40px; margin-bottom: 10px;}
+  .item-txt{width: 90%; margin: 0 auto;}
+  .item-txt .Supplies{
+    width: 85%;
+    text-align: left;
+    font-weight: 500;
+  }
+  .Funding-progress span{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .funding-pepole{font-size: 18px; font-weight: 500;}
+  .funding-option{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .funding-shop{margin-top: 270px;}
+  .detail-image{width: 100%;}
+}
