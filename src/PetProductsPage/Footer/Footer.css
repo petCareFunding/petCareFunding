@@ -44,3 +44,20 @@
     }
     .sns{width:5%; height: 20px;}
 }
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    .pet-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .first .refund{font-size: 18px; font-weight: 600; }
+    .first .refund-text{
+        width: 450px;
+        margin: 0 auto;
+    }
+    .three{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .three img{width: 3%; margin-left: 20px;}
+}
