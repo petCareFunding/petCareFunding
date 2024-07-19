@@ -1,13 +1,16 @@
 .total-payment {
   width: 60%;
-  height: 230px;
+  height: 300px;
   background-color: white;
   margin: 0 auto;
 }
 .total-title{
-  width: 50%;
-  margin-left: 340px;
+  width: 60%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
   margin-bottom: 20px;
+  text-align: left;
 }
 .totalpay {
   width: 100%;
@@ -23,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 10px;
   margin-top: 10px;
 }
@@ -42,6 +46,7 @@
 .price .product-price{
   font-size: 16px;
   font-weight: bold;
+  
 }
 .coupon .coupone-name{
   font-size: 16px;
