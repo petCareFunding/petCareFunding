@@ -54,16 +54,16 @@ function SchoolPost(){
 
 
     return(
-        <div className='schoolpost'>
+        <div className='schoolPost'>
             <div className='scp-photo-container'>
                 <label className='photo-fill-btn' htmlFor = 'uploadPhoto'>
                     사진 업로드 
                     <input type='file' accept='image/*' style={{display:'none'}} id='uploadPhoto'
                         multiple required onChange={handleUpload} /> 
                 </label>
-                <div style={{gap:'2px'}}>
+                <div style={{gap:'2px', marginTop:'10px'}}>
                     <p>사진을 한번에 여러장 선택하세요.</p>
-                    <p>맨 좌측 첫줄 사진이 대표사진으로 설정됩니다.</p>
+                    <p>맨 첫줄 좌측 사진이 대표사진으로 설정됩니다.</p>
                 </div>
             </div>
             <div className='scp-photo-grid'>
