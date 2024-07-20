@@ -11,7 +11,7 @@ function EditInfo() {
     const [aftpassword, setAftpassword] = useState('');
 
     const handleImageChange = (e)=>{
-        const file = e.target.files[0];  //모르겟더염
+        const file = e.target.files[0]; 
         if(file){
             setPostImg(file);
             const reader = new FileReader(); 
@@ -91,8 +91,8 @@ function EditInfo() {
                 </div>
                 <div className="myinfo-profile-section">
                     <div id='myprofile-container'>
-                        <div className='myinfo-circle'>{<img src = {postImg} />}</div>
-                        <label className='myinfo-pickphoto' htmlFor='myprofile'>사진 선택하기</label>
+                        <div className='myinfo-circle'>{<img src = {preview} id='myinfo-changed-photo' />}</div>
+                        <label className='myinfo-pickphoto-btn' htmlFor='myprofile'>사진 선택하기</label>
                     </div>
                     <input type='file' id='myprofile' name='myprofile' accept='image/*' 
                                  onChange = {handleImageChange} style={{display:'none'}} />       

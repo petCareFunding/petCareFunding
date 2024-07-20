@@ -4,6 +4,7 @@
     max-width: 1200px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
+    max-height: 5vh;
 }
 
 .myinfo-title {
@@ -85,7 +86,7 @@
 
 .myinfo-save-button {
     display: block;
-    margin: 40px auto 0;
+    margin: 20px auto 0;
     padding: 10px 20px;
     background-color: #FFEEAE;
     border: none;
@@ -93,25 +94,25 @@
     cursor: pointer;
     font-size: 16px;
 }
-.myinfo-pickphoto{
+.myinfo-pickphoto-btn{
     background-color:#FFEEAE ;
     width: 30px;
     color: black;
     cursor: pointer;
     margin-left: 20px;
-    margin-top: 30px;
 }
 
 .myinfo-circle{
     margin-top: 100px;
-    margin-left: 40px; 
+    margin-left: 40px;
+    margin-bottom: 20px;
     width: 250px;
     height: 250px;
     border-radius: 50%;
     background-color: rgba(128, 128, 128, 0.614);
     object-fit: cover;
 }
-#circle{
+#myinfo-changed-photo{
     /* margin-top: 100px;*/
     margin-left: 0px;  
     width: 250px;
@@ -121,9 +122,9 @@
 }
 
 #myinfo-cpwbtn{
-    background-color: #FFEEAE;
+    background-color: #ffdbe4;
     color: black;
     border: none;
-    border-radius: 20%;
+    border-radius: 20px;
     cursor: pointer;
 }
