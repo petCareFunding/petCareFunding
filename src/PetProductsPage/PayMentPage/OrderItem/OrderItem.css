@@ -46,10 +46,8 @@
   flex-direction: column;
 }
 .order {width: 50%;}
-
-.title p {
-  padding: 5px;
-}
+.title{display: flex;}
+.title p{padding: 10px;}
 .title .order-name {
   color: black;
   width: 300px;
@@ -59,11 +57,10 @@
   color: black;
   text-align: left;
 }
-.title .price {
-  width: 30%;
-  border: 1px solid black;
+.title .orderprice {
   color: black;
-  margin-right: 30px;
+  text-align: left;
+  width: 300px;
 }
 .order-info {
   width: 60%;
@@ -115,5 +112,45 @@ button {
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .order-item{width: 95%;}
+    .order-item img{width: 40%; margin-left: 10px;}
+    .title{margin-left: 20px; display: flex; flex-direction: column;}
+    .title .order-name{
+      width: 250px;
+      font-weight: bold;
+    }
+    .title .quantity{font-size: 18px; font-weight: 700;}
+    .title .orderprice{font-size: 18px; font-weight: 700; margin-right: 30px;}
+    .order-info{
+      width: 95%;
+    }
+    .order-info .info-email{color: #929292;}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    .order-item{width: 90%;}
+    .order-item img{
+      width: 40%;
+      margin-left: 10px;
+    }
+    .title{margin-left: 20px;}
+    .title .order-name{font-weight: 700; font-size: 18px;}
+    .title .quantity{font-weight: 700; font-size: 18px;}
+    .title .orderprice{font-weight: 700; font-size: 18px;}
+    .order-info{width: 90%;}
+    .order-info .info-email{color: #929292;}
+}
+@media screen and (min-width: 1201px) {
+.order-item{
+  width: 60%;
+}
+.order-item img{width: 50%; margin-left: 10px;}
+.title{margin-left: 20px;}
+.title .order-name{font-weight: 700; font-size: 18px;}
+.title .quantity{font-weight: 700; font-size: 18px;}
+.title .orderprice{font-weight: 700; font-size: 18px;}
+.order-info .info-email{color: #929292;}
 }
 
