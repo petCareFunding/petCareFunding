@@ -1,0 +1,79 @@
+.paymethod {
+  width: 60%;
+  overflow: hidden;
+  margin: 30px auto;
+  background-color: white;
+}
+.method{
+  width: 50%;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+.payment {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 150px;
+}
+.payment .card-payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-payment  span{width: 150px;}
+.card-payment  input{width: 150px;}
+.virtual-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.virtual-account span{width: 100px;}
+.virtual-account input{width: 100px;}
+.paymethod-bottom{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 150px;
+}
+.Deposit_without_bankbook{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Kakao_Pay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Deposit_without_bankbook span{
+  width: 100px;
+}
+.Deposit_without_bankbook input{
+  width: 200px;
+}
+.Kakao_Pay span{width: 100px;}
+.Kakao_Pay input{width: 150px;}
+.bank{
+  width: 60%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+.bank select{
+  width: 100%;
+  height: 40px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+.bank input{
+  width: 100%;
+  height: 40px;
+  border-radius: 0;
+  margin-left: 60px;
+  border:  1px solid #ccc;
+}

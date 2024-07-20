@@ -1,5 +1,6 @@
 .header{width: 100%; height: 50px;}
-.header h1{
+.header a{text-decoration: none;}
+ h1{
     font-family: Lemon;
     color: #FFEEAE;
     -webkit-text-stroke: 2px black;
@@ -13,3 +14,12 @@ input{
     margin-top: 10px;
 }
 .icon{font-size: 25px;}
+
+@media screen and (max-width:600px){
+    .header{
+        width: 100%;
+    }
+    .header input{
+        width: 65%;
+    }
+}

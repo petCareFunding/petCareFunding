@@ -17,7 +17,7 @@ const Login_Page=()=>{
                     <div className="Password_input">
                         <input type="password" placeholder="비밀번호" />
                     </div>
-                    <div className="id_pw_search">아이디/비밀번호 찾기</div>
+                    <div className="search">아이디/비밀번호 찾기</div>
                     
                     <div className="submit_button">
                         <input type="submit" value="로그인" />
