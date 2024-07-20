@@ -33,7 +33,7 @@ export default function OrderItem() {
         <p className="order-prod">상품 상세정보</p>
           <p className="order-name">{product.name}</p>
           <p className="quantity">{product.quantity}개</p>
-          <p className="price">{product.price}원</p>
+          <p className="orderprice">{product.price}원</p>
         </div>
       </div>
       <div className="order-info">
