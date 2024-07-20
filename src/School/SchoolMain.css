@@ -72,7 +72,18 @@ body .schoolmain{
 .scm-text-container{
     display: flex;
     flex-direction: column;
-    
+}
+.scm-text-container h4{
+    margin-bottom: 20px;
+}
+
+.scm-text-container #scm-funding-people-status{
+    margin-top: 20px;
+}
+
+.scm-text-container #scm-funding-date-status{
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .scm-fund{
