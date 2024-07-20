@@ -40,3 +40,15 @@
     height: 30px;
     padding: 5px;
 }
+@media screen and (max-width: 600px) {
+    .delivery-wrapper{width: 95%; }
+    .memo select{width: 100%;}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    .delivery-wrapper{width: 90%; }
+    .memo select{width: 100%;}
+}
+@media screen and (min-width: 1201px) {
+    .memo select{width: 100%;}
+}
