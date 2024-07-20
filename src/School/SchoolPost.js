@@ -5,8 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-function SchoolPost(){
-    
+function SchoolPost(){  
     const [show, setShow] = useState(false);
     const [title, setTitle] = useState('');
     const [person, setPerson] = useState('');
@@ -32,7 +31,6 @@ function SchoolPost(){
     
 
 
-
     const handleUpload = (e)=>{
         const fileArr = e.target.files;
         setPostImg(Array.from(fileArr)); 
@@ -49,8 +47,6 @@ function SchoolPost(){
             reader.readAsDataURL(fileArr[i]);
         }
     };
-
-        
 
 
     return(
