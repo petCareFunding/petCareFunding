@@ -12,7 +12,7 @@ export default function Payment_Method() {
   return (
     <>
       <div className='paymethod'>
-      <h3 className='method'>결제방법</h3>
+      <p className='method'>결제방법</p>
         <div className='payment'>
           <label className='card-payment'>
             <input 
@@ -20,20 +20,20 @@ export default function Payment_Method() {
               value="card" 
               checked={selectedMethod === 'card'} 
               onChange={() => handleRadioChange('card')} 
+              className='pay-input'
             />
-            <span>신용카드</span>
+            <span className='card-text'>신용카드</span>
           </label>
           <label className='virtual-account'>
             <input 
               type='radio' 
               value="virtual" 
               checked={selectedMethod === 'virtual'} 
-              onChange={() => handleRadioChange('virtual')} 
+              onChange={() => handleRadioChange('virtual')}
+              className='virtual' 
             />
             <span>가상계좌</span>
           </label>
-        </div>
-        <div className='paymethod-bottom'>
           <label className='Deposit_without_bankbook'>
             <input 
               type='radio' 
@@ -58,7 +58,7 @@ export default function Payment_Method() {
             <option>NH은행: {PayMockup.order.bank} 예금주명</option>
           </select>
           {selectedMethod === 'deposit' && (
-            <input type='text' placeholder='예금주명 입력' />
+            <input type='text' placeholder='예금주명 입력'  className='bank-input'/>
           )}
         </div>
       </div>
