@@ -1,9 +1,12 @@
 .header{width: 100%; height: 50px; margin: 0 auto;}
 .header a{text-decoration: none;}
+.search-container{width: 100%; margin: 0 auto;}
+.search-container input{width: 30%;  margin-left: 700px;}
  h1{
     font-family: Lemon;
     color: #FFEEAE;
     -webkit-text-stroke: 2px black;    
+    text-align: center;
 }
 input{
     width: 500px;
