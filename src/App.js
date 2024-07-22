@@ -6,6 +6,7 @@ import ItemDetail from "./PetProductsPage/ItemDetailPage/ItemDetail";
 import { BrowserRouter as Router, Route, Link, Routes, BrowserRouter } from 'react-router-dom';
 import Main from './MainPage/Main';
 import Login from './Login/Login.js';
+import Register from './register/Register.js';
 import SchoolMain from './School/SchoolMain.js';
 import SchoolPost from './School/SchoolPost.js';
 import EditInfo from './Mypage/EditInfo.js';
@@ -62,6 +63,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login setToken={setAuthToken} /> }/>
+          <Route path="/register" element={<Register/>} />
           <Route path="/ItemsPage" element={<ItemsPage />} />
           <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
           <Route path='/school' element={<SchoolMain/>}></Route>
