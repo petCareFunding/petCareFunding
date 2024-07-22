@@ -7,6 +7,7 @@ export default function Main() {
             <nav className="navFirst">
                 <ul>
                     <li><a href="/mypage">마이페이지</a></li>
+                    <li><Link to='/login'>로그인</Link></li>
                 </ul>
             </nav>
             <h3>Have a puppy day !</h3>

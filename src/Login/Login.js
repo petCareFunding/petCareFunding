@@ -53,7 +53,7 @@ const Login = ({ setToken }) => {
     <div>
       <div className='login-container'>
         <form onSubmit={handleLogin}>
-        <h1>로그인</h1>
+        <div className='log'>로그인</div>
           <label>아이디 또는 이메일</label>
           <div>
             <input type="text" value={username} placeholder='아이디 또는 이메일' onChange={(e) => 
