@@ -45,6 +45,7 @@ function App() {
   };
 
   return (
+    <BrowserRouter>
     <div className="App">
       <nav>
           <ul>
@@ -54,11 +55,10 @@ function App() {
             {token && <li><button onClick={handleLogout}><Link to="/">로그아웃</Link></button></li>}
           </ul>
         </nav>
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login setToken={setAuthToken} /> }/>
-           <Route path="/ItemsPage" element={<ItemsPage />} />
+          <Route path="/ItemsPage" element={<ItemsPage />} />
           <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
           <Route path='/school' element={<SchoolMain/>}></Route>
           <Route path='/school/postSchoolFunding' element={<SchoolPost/>}/>
@@ -70,8 +70,8 @@ function App() {
           <Route path='/PayMentPage/:userid'  element={<OrderItem/>} />
           <Route path='/Witdraw'  element={<Withdraw/>} />
         </Routes>
-      </BrowserRouter>
     </div>
+    </BrowserRouter>
   );
 }
 
