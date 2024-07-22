@@ -12,10 +12,10 @@
     border: none;
 }
 .log {
-    margin-top: 80px;
+    margin-top: 110px;
     margin-left: 80px;
-    margin-bottom: 80px;
-    font-size: 33px;
+    margin-bottom: 40px;
+    font-size: 32px;
     font-weight: bold;
 }
 .login-container label{
@@ -78,7 +78,7 @@
     width: 71%;
     height: 50px;
     margin-left: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -87,7 +87,7 @@
     margin-left: 225px;
 }
 .goRegister{
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 260px;
     color: black;
     font-weight: bold;
