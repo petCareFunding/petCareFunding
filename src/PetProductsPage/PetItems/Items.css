@@ -199,9 +199,10 @@
   .item:nth-child(3){
     width: 100%;
     margin: 20px auto;
+    margin-left: 40px;
   }
   .item:nth-child(3) img{
-    width: 70%;
+    width: 95%;
   }
 }
 @media screen and (min-width: 1201px) {
@@ -209,8 +210,9 @@ img{width: 100%;}
     .item:first-child{margin-left: 20px;}
     .item-detail:nth-child(2){
       width: 50%;
-      margin-left: 100px;
+      margin-left: 50px;
     }
+    .item-detail:nth-child(2) img{width: 60%;}
     .item-detail .item-name{
       width: 400px;
       font-weight: 600;
