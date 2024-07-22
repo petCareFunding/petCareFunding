@@ -43,14 +43,21 @@ function App() {
   const handleLogout = () => {
     setAuthToken('');
   };
-  
+
   return (
     <div className="App">
-
+      <nav>
+          <ul>
+            {!token && <li><Link to="/register">회원가입</Link></li>}
+            {!token && <li><Link to="/login">로그인</Link></li>}
+            {token && <li><Link to="/Mypage">마이페이지</Link></li>}
+            {token && <li><button onClick={handleLogout}><Link to="/">로그아웃</Link></button></li>}
+          </ul>
+        </nav>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login setToken={setAuthToken} /> }/>
            <Route path="/ItemsPage" element={<ItemsPage />} />
           <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
           <Route path='/school' element={<SchoolMain/>}></Route>
