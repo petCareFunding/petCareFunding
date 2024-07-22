@@ -14,6 +14,9 @@ import MypageHeader from './Mypage/Header/Header.js';
 import FuneralContainer from './FuneralService/FuneralContainer';
 import ReservationContainer from './FReservationService/ReservationContainer';
 import OrderItem from './PetProductsPage/PayMentPage/OrderItem/OrderItem.js';
+import Funding_payment_details from './Funding_payment_details/Funding_payment_details.js';
+import Funding_payment_detailsHeader from './Funding_payment_details/Header/Header.js';
+import Wishlist from './Wishlist/Wishlist.js';
 import Withdraw from './Withdraw/Withdraw.js';
 
 function App() {
@@ -35,6 +38,9 @@ function App() {
           <Route  path="/Funeral" element={<FuneralContainer/>}></Route>
       <Route  path="/FReservation" element={<ReservationContainer/>}></Route>
       <Route path='/PayMentPage/:userid'  element={<OrderItem/>} />
+      <Route path='/Funding_payment_details'  element={<Funding_payment_details/>} />
+      <Route path='/Funding_payment_detailsHeader'  element={<Funding_payment_detailsHeader/>} />
+      <Route path='/Wishlist'  element={<Wishlist/>} />
       <Route path='/Witdraw'  element={<Withdraw/>} />
         </Routes>
       </BrowserRouter>

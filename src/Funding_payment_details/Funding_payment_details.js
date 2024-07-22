@@ -1,7 +1,7 @@
 import React from 'react';
-import './Funding_payment_detai.css';
+import './Funding_payment_details.css';
 
-const Funding_payment_detai = () => {
+const Funding_payment_details = () => {
   return (
     <div className="Funding_payment_detai">
       <div className="content">
@@ -42,4 +42,4 @@ const Funding_payment_detai = () => {
   );
 };
 
-export default Funding_payment_detai;
+export default Funding_payment_details;
