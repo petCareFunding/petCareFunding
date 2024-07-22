@@ -77,6 +77,7 @@ function SchoolPost(){
                 {/* {
                     preview.length >= 4 ? null: <div/> 모르겟더염
                 }  */}
+            
             <div id='title-container'>
                     <h3>글 제목</h3>
                     <input type='text' id='scp-title' placeholder='지역 + 유치원이름' 
