@@ -47,7 +47,7 @@
     font-weight: bold;
 }
 .kakao-btn{
-    background-image: url('../../../img/kakao-logo.png');
+    background-image: url('../../img/kakao-logo.png');
     background-repeat: no-repeat;
     background-color:  #FEE500;
     background-size: 50px;
@@ -63,7 +63,7 @@
     cursor: pointer;
 }
 .naver-btn{
-    background-image: url('../../../img/naver-logo.png');
+    background-image: url('../../img/naver-logo.png');
     background-repeat: no-repeat;
     background-color: #03c75a;
     background-size: 50px;
