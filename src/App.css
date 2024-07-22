@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.loginText{
+  padding-left: 70%;
+}
+.register{
+  position: absolute;
+  margin-left: 60px;
+}

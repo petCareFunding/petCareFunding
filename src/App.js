@@ -1,11 +1,11 @@
 import './App.css';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import ItemsPage from "./PetProductsPage/PetItemsPage/ItemsPage";
 import ItemDetail from "./PetProductsPage/ItemDetailPage/ItemDetail";
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes, BrowserRouter } from 'react-router-dom';
 import Main from './MainPage/Main';
-import Login_Page from './login/Login_Page';
-import Join_Page from './join_members/Join_Page';
+import Login from './Login/Login.js';
 import SchoolMain from './School/SchoolMain.js';
 import SchoolPost from './School/SchoolPost.js';
 import EditInfo from './Mypage/EditInfo.js';
@@ -20,15 +20,49 @@ import Wishlist from './Wishlist/Wishlist.js';
 import Withdraw from './Withdraw/Withdraw.js';
 
 function App() {
-  return (
-    <div className="App">
 
-      <BrowserRouter>
+  const [token, setToken] = useState(localStorage.getItem('token') || '');
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get('token');
+    if (token) {
+      setAuthToken(token);
+      window.history.replaceState({}, document.title, window.location.pathname); // remove token from URL
+    }
+  }, []);
+
+  const setAuthToken = (token) => {
+    if (token) {
+      localStorage.setItem('token', token);
+      axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+    } else {
+      localStorage.removeItem('token');
+      delete axios.defaults.headers.common['Authorization'];
+    }
+    setToken(token);
+  };
+
+  const handleLogout = () => {
+    setAuthToken('');
+  };
+  return (
+    <BrowserRouter>
+    <div className="App">
+      <div className='loginText'>
+    <nav>
+         
+            {!token && <span className='login'><Link to="/login">로그인</Link></span>}
+            {!token && <span className='register'><Link to="/register">회원가입</Link></span>}
+            {token && <Link to="/mypage">마이페이지</Link>}
+            {token && <button onClick={handleLogout}><Link to="/">로그아웃</Link></button>}
+        
+    </nav>
+    </div>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/login" element={<Login_Page />} />
-          <Route path="/join_members" element={<Join_Page />} />
-           <Route path="/ItemsPage" element={<ItemsPage />} />
+          <Route path="/login" element={<Login setToken={setAuthToken} /> }/>
+          <Route path="/ItemsPage" element={<ItemsPage />} />
           <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
           <Route path='/school' element={<SchoolMain/>}></Route>
           <Route path='/school/postSchoolFunding' element={<SchoolPost/>}/>
@@ -36,15 +70,15 @@ function App() {
           <Route path='/Mypage' element={<Mypage />} />
           <Route path='/Mypage/Header' element={<MypageHeader />} />
           <Route  path="/Funeral" element={<FuneralContainer/>}></Route>
-      <Route  path="/FReservation" element={<ReservationContainer/>}></Route>
-      <Route path='/PayMentPage/:userid'  element={<OrderItem/>} />
-      <Route path='/Funding_payment_details'  element={<Funding_payment_details/>} />
-      <Route path='/Funding_payment_detailsHeader'  element={<Funding_payment_detailsHeader/>} />
-      <Route path='/Wishlist'  element={<Wishlist/>} />
-      <Route path='/Witdraw'  element={<Withdraw/>} />
+          <Route  path="/FReservation" element={<ReservationContainer/>}></Route>
+          <Route path='/PayMentPage/:userid'  element={<OrderItem/>} />
+          <Route path='/Funding_payment_details'  element={<Funding_payment_details/>} />
+          <Route path='/Funding_payment_detailsHeader'  element={<Funding_payment_detailsHeader/>} />
+          <Route path='/Wishlist'  element={<Wishlist/>} />
+          <Route path='/Witdraw'  element={<Withdraw/>} />
         </Routes>
-      </BrowserRouter>
     </div>
+    </BrowserRouter>
   );
 }
 
