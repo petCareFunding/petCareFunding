@@ -11,7 +11,9 @@
     border: none;
 }
 
-.register-container h1{
+.Reg{
+    font-size: 32px;
+    font-weight: bold;
     margin-top: 80px;
     margin-left: 80px;
     margin-bottom: 50px;
@@ -19,6 +21,7 @@
 .register-container h2{
     margin-top: 60px;
     margin-left: 80px;
+    margin-bottom: 14px;
 }
 
 .register-container label{

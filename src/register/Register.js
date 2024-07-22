@@ -77,7 +77,7 @@ const Register = () => {
   return (
     <div>
       <div className='register-container'>
-      <h1>회원가입</h1>
+     <div className='Reg'>회원가입</div>
       <form onSubmit={handleRegister}>
       <label>아이디</label>
         <div>
