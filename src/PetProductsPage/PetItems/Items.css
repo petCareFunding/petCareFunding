@@ -142,7 +142,7 @@
     flex-direction: column;
   }
   .item:nth-child(2) img {
-    width: 75%;
+    width: 100%;
     border-radius: 20px;
     margin: 0 auto;
   }
@@ -152,7 +152,7 @@
     margin: 50px auto;
   }
   .item:nth-child(3) img {
-    width: 75%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1200px) {
