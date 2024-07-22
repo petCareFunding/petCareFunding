@@ -1,6 +1,7 @@
 .mainContainer h1 {
     color: #FBE99F;
     padding-top: 100px;
+    text-align: center;
     padding-bottom: 30px;
     font-size: 50px;
     margin: 0px;
@@ -23,6 +24,7 @@
 
 .mainContainer h3 {
     font-size: 20px;
+    text-align: center;
     margin-bottom: 100px;
     margin-top: 50px;
 }

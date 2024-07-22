@@ -48,12 +48,12 @@ function App() {
     <div className="App">
       <div className='loginText'>
     <nav>
-          <ul>
-            {!token && <li><Link to="/register">회원가입</Link></li>}
-            {!token && <li><Link to="/login">로그인</Link></li>}
-            {token && <li><Link to="/mypage">마이페이지</Link></li>}
-            {token && <li><button onClick={handleLogout}><Link to="/">로그아웃</Link></button></li>}
-          </ul>
+         
+            {!token && <span className='login'><Link to="/login">로그인</Link></span>}
+            {!token && <span className='register'><Link to="/register">회원가입</Link></span>}
+            {token && <Link to="/mypage">마이페이지</Link>}
+            {token && <button onClick={handleLogout}><Link to="/">로그아웃</Link></button>}
+        
     </nav>
     </div>
         <Routes>
