@@ -1,9 +1,9 @@
 import './App.css';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ItemsPage from "./PetProductsPage/PetItemsPage/ItemsPage";
 import ItemDetail from "./PetProductsPage/ItemDetailPage/ItemDetail";
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes, BrowserRouter } from 'react-router-dom';
 import Main from './MainPage/Main';
 import Login from './Login/Login.js';
 import SchoolMain from './School/SchoolMain.js';
