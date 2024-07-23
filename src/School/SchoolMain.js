@@ -55,7 +55,7 @@ function SchoolMain(){
         <div className="schoolmain">
             <header className="scm-title" onClick={GotoMainpage}>MEONG-GORITHM</header>
             <div className="local-search-container">
-                <input type="text" className="local-search" placeholder="지역 검색하기.."/>
+                <input type="search" className="local-search" placeholder="지역 검색하기.." />
                 <img src={process.env.PUBLIC_URL + './ion_search.png'} alt="돋보기아이콘" className="scm-searchbtn"></img>
             </div>
             <div className="scm-postbtn-container">
