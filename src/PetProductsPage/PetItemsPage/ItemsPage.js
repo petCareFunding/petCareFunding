@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PetHeader from "../Header/PetHeader";
 import "./PetItemspage.css";
-import PetItems from "../PetItems/Items";
-import Footer from '../Footer/Footer';
-import  mockup from '../mockup'
+import PetItem from "../PetItems/Items";
+import Footer from "../Footer/Footer";
+// import mockup from "../mockup";
+import axios from "axios";
 
 const PetItemspage = () => {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/products")
+      .then((response) => {
+        setProducts(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
   return (
     <div>
-      <PetHeader/>
-      <PetItems images={mockup} />
-      <Footer/>
+      <PetHeader />
+        {products.map((product) => (
+          <PetItem key={product.prodid} product={product} />
+        ))}
+      <Footer />
     </div>
   );
 };
