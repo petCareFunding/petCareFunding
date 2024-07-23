@@ -118,6 +118,13 @@ body .schoolmain{
     margin-bottom: 10px;
     margin-right: 50px;
 }
+#scm-postbtn:hover{
+    background-color: #FFEEAE;
+    color: black;
+}
+
+
+
 .scm-postbtn-container{
     display: flex;
     justify-content: end;
