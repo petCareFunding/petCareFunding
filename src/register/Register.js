@@ -40,14 +40,15 @@ const Register = () => {
     setUsername(username);
     const usernameRegExp = /^[a-zA-z0-9]{6,12}$/;
  
+
     setUserRealname(userRealname);
   
+
     setPassword(password);
     const passwordRegExp =
       /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
     
   
-
     setConfirmPassword(confirmPassword);
 
 
