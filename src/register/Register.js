@@ -12,17 +12,27 @@ const Register = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [passwordType, setPasswordType] = useState({ type: 'password', visivle: false});
   const [passwordConfirmType, setPasswordConfirmType] = useState({ type: 'password', visivle: false});
-  const [usernameMessage, setUsernameMessage] = useState("");
   const [isUsername, setIsUsername] = useState(false);
-  const [userRealnameMessage, setUserRealnameMessage] = useState("");
   const [isUserRealname, setIsUserRealname] = useState(false);
-  const [passwordMessage, setPasswordMessage] = useState("");
   const [isPassword, setIsPassword] = useState(false);
-  const [confirmPasswordMessage, setConfirmPasswordMessage] = useState("");
   const [isConfirmPassword, setIsConfirmPassword] = useState(false);
 
 
   const navigate = useNavigate();
+
+  const usernameMes = () =>{
+    return isUsername === false ? 'register-username-alert' : 'register-username-alert-view';
+  }
+
+  const userRealnameMes = () =>{
+    return isUserRealname === false ? 'register-userRealname-alert' : 'register-userRealname-alert-view';
+  }
+  const passwordMes = () =>{
+    return isPassword === false ? 'register-password-alert' : 'register-password-alert-view';
+  }
+  const confirmPasswordMes = () =>{
+    return isConfirmPassword === false ? 'register-confirmPassword-alert' : 'register-confirmPassword-alert-view';
+  }
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -31,22 +41,18 @@ const Register = () => {
     const usernameRegExp = /^[a-zA-z0-9]{6,12}$/;
  
     if (!usernameRegExp.test(username)) {
-      setUsernameMessage("6-12사이 대소문자 또는 숫자를 입력해 주세요.");
-      setIsUsername(false);
-    } else if(!username){
-      setUsernameMessage("");
       setIsUsername(true);
+    } else{
+      setIsUsername(false);
     }
    
 
   
     setUserRealname(userRealname);
     if (!userRealname) {
-      setUserRealnameMessage("이름을 입력해주세요.");
-      setIsUserRealname(false);
-    } else {
-      setUserRealnameMessage("");
       setIsUserRealname(true);
+    } else {
+      setIsUserRealname(false);
     }
   
     setPassword(password);
@@ -54,24 +60,18 @@ const Register = () => {
       /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
 
     if (!passwordRegExp.test(password)) {
-      setPasswordMessage(
-        "숫자+영문자+특수문자 조합으로 8자리 이상 입력해주세요."
-      );
-      setIsPassword(false);
-    } else {
-      setPasswordMessage("");
       setIsPassword(true);
+    } else {
+      setIsPassword(false);
     }
   
 
     setConfirmPassword(confirmPassword);
     if (password !== confirmPassword || !confirmPassword) {
-      setConfirmPasswordMessage("비밀번호와 일치하지 않습니다.");
-      setIsConfirmPassword(false);
+      setIsConfirmPassword(true);
     } 
     else{
-      setConfirmPasswordMessage("");
-      setIsConfirmPassword(true);
+      setIsConfirmPassword(false);
     }
 
 
@@ -122,25 +122,25 @@ const Register = () => {
           <input type="text" value={username} placeholder='아이디를 입력하세요' onChange={(e) => 
             setUsername(e.target.value)} className='register-input'/>
         </div>
-        <p className="message">{usernameMessage}</p>
+        <div className={usernameMes()}>6-12사이 대소문자 또는 숫자를 입력해주세요.</div>
         <label>이름</label>
         <div>
           <input type="text" value={userRealname} placeholder='이름을 입력하세요' onChange={(e) => 
             setUserRealname(e.target.value)} className='register-input'/>
         </div>
-        <p className="message">{userRealnameMessage}</p>
+        <p className={userRealnameMes()}>이름을 입력해주세요.</p>
         <label>비밀번호</label>
         <div>
           <input type={passwordType.type} value={password} placeholder='비밀번호를 입력하세요' onChange={(e) => 
             setPassword(e.target.value)} className='register-input'/>
-            <p className="message">{passwordMessage}</p>
+            <p className={passwordMes()}>숫자+영문자+특수문자 조합으로 8자리 이상 입력해주세요.</p>
         </div>
         <label>비밀번호 확인</label>
         <div>
           <input type={passwordConfirmType.type} value={confirmPassword} placeholder='비밀번호를 한번 더 입력하세요' onChange={(e) => 
             setConfirmPassword(e.target.value)} className='register-input'/>
         </div>
-        <p className="message">{confirmPasswordMessage}</p>
+        <div className={confirmPasswordMes()}>비밀번호와 일치하지 않습니다.</div>
         <div className='password-visible-icon' onClick={handlePasswordType}>
           { passwordType.visivle ? <FaEye size="25px"/> : <FaEyeSlash size="25px"/>}
         </div>

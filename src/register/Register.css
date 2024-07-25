@@ -32,7 +32,6 @@
     font-weight: bold;
 }
 .register-input{
-    position: relative;
     margin-top: 5px;
     margin-left: 80px;
     margin-bottom: 5px;
@@ -60,7 +59,7 @@
 .password-visible-icon{
     position: absolute;
     color: gray;
-    top: 360px;
+    top: 353px;
     left: 465px;
     cursor: pointer;
 }
@@ -68,13 +67,32 @@
 .passwordConfirm-visible-icon{
     position: absolute;
     color: gray;
-    top: 435px;
+    top: 428px;
     left: 465px;
     cursor: pointer;
 }
 
-.message{
-    margin-left: 80px;
-    font-size: 13px;
-    color: rgb(219, 28, 28);
+.register-username-alert{
+    visibility: hidden;
+}
+.register-username-alert-view{
+    visibility: visible;
+}
+.register-userRealname-alert{
+    visibility: hidden;
+}
+.register-userRealname-alert-view{
+    visibility: visible;
+}
+.register-password-alert{
+    visibility: hidden;
+}
+.register-password-alert-view{
+    visibility: visible;
+}
+.register-confirmPassword-alert{
+    visibility: hidden;
+}
+.register-confirmPassword-alert-view{
+    visibility: visible;
 }
