@@ -20,7 +20,7 @@
     margin-bottom: 50px;
 }
 .register-container h2{
-    margin-top: 60px;
+    margin-top: 30px;
     margin-left: 80px;
     margin-bottom: 14px;
 }
@@ -43,7 +43,7 @@
 .register-btn{
     width: 71%;
     height: 50px;
-    margin-top: 40px;
+    margin-top: 35px;
     margin-left: 80px;
     border-radius: 10px;
     border: none;
@@ -59,7 +59,7 @@
 .password-visible-icon{
     position: absolute;
     color: gray;
-    top: 353px;
+    top: 397px;
     left: 465px;
     cursor: pointer;
 }
@@ -67,7 +67,7 @@
 .passwordConfirm-visible-icon{
     position: absolute;
     color: gray;
-    top: 428px;
+    top: 490px;
     left: 465px;
     cursor: pointer;
 }
@@ -77,22 +77,35 @@
 }
 .register-username-alert-view{
     visibility: visible;
+    margin-left: 80px;
+    font-size: 14px;
+    color: rgb(219, 28, 28);
 }
 .register-userRealname-alert{
     visibility: hidden;
 }
 .register-userRealname-alert-view{
     visibility: visible;
+    margin-left: 80px;
+    font-size: 14px;
+    color: rgb(219, 28, 28);
+    margin-bottom: 5px;
 }
 .register-password-alert{
     visibility: hidden;
 }
 .register-password-alert-view{
     visibility: visible;
+    margin-left: 80px;
+    font-size: 14px;
+    color: rgb(219, 28, 28);
 }
 .register-confirmPassword-alert{
     visibility: hidden;
 }
 .register-confirmPassword-alert-view{
     visibility: visible;
+    margin-left: 80px;
+    font-size: 14px;
+    color: rgb(219, 28, 28);
 }
