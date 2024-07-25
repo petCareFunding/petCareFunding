@@ -54,8 +54,8 @@ function MainHeader(){
                     <Link id= 'mypageLink' to={'/mypage'}>마이페이지</Link>             
             </nav>
             <nav className="navSecond">
-                    <Link id= 'schoolLink' to={'/school'}>유치원 펀딩</Link>
-                    <Link id= 'productsLink' to={'/products'}>반려동물 용품 펀딩</Link>
+                    <Link id= 'schoolLink' to={'/school'}>유치원 펀딩 School Funding</Link>
+                    <Link id= 'ItemsLink' to={'/ItemsPage'}>반려동물 용품 펀딩</Link>
                     <Link id= 'funeralLink' to={'/funeral'}> 장묘 예약</Link>
             </nav>
         </div>

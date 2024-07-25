@@ -31,10 +31,6 @@
                 -1px -1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.Main-footer{
-    
-    
-}
 
 .main-footer-title{
     position: fixed;
@@ -46,28 +42,26 @@
 }
 
 
-
-
-
-
-
-
 .MainAllFooter{
     position: relative;
     z-index: 55;
     offset: 5;
 }
 
+/*-------------------------------같이 움직이는거 해결해야됨---------------------------------------*/
 .navFirst{
     display: flex;
     justify-content: end;
     padding: 5px;
     margin: 5px;
     position: sticky;
+    top:10px;
 }
 #mypageLink{
     margin-right: 60px;
     color: #504e4e;
+    position: sticky;
+    top:10px;
 }
 #loginLink{
     margin-right: 20px;
@@ -77,4 +71,23 @@
 .navSecond{
     display: flex;
     justify-content: start;
+}
+
+#schoolLink{
+    font-size: 40px;
+    color: #FFEEAE;
+    margin-top: 350px;
+}
+
+#ItemsLink{
+    font-size: 40px;
+    color: #FFEEAE;
+    margin-top: 900px;
+}
+
+#funeralLink{
+    font-size: 40px;
+    color: #FFEEAE;
+    margin-top: 900px;
+    margin-right: 250px;
 }
