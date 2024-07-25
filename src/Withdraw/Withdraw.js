@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Withdraw.css';
+import { useNavigate } from 'react-router-dom';
 
 const PasswordInput = ({ onPasswordSubmit }) => {
   const [password, setPassword] = useState('');
@@ -12,13 +13,13 @@ const PasswordInput = ({ onPasswordSubmit }) => {
     if (password) {
       onPasswordSubmit(password);
     } else {
-      alert('비밀번호를 입력해 주세요.');
+      alert('비밀번호를 입력해 주시겠습니까?');
     }
   };
 
   return (
     <div className="container">
-      <h2>비밀번호를 입력해 주세요</h2>
+      <h2>비밀번호를 입력해 주시겠습니까</h2>
       <input 
         type="password" 
         value={password} 
@@ -51,6 +52,7 @@ const ConfirmExit = ({ onCancel, onConfirm }) => {
 const App = () => {
   const [isPasswordConfirmed, setIsPasswordConfirmed] = useState(false);
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handlePasswordSubmit = (password) => {
     setPassword(password);
@@ -64,6 +66,7 @@ const App = () => {
 
   const handleConfirm = () => {
     alert('탈퇴가 완료되었습니다.');
+    navigate('/Mypage/Withdraw');
   };
 
   return (
