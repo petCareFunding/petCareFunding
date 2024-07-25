@@ -1,51 +1,29 @@
-.mainContainer h1 {
-    color: #FBE99F;
-    padding-top: 100px;
-    text-align: center;
-    padding-bottom: 30px;
-    font-size: 50px;
-    margin: 0px;
+.MainPage{
+    max-height: 500vh;
+}
+/* .MainPage img{
+    width: 400px;
+    height: 400px;
+} */
+#field3{
+    object-fit: cover;
+    max-height: 1800px;
 }
 
-.mainContainer ul {
+.Main-pupday p {
+    font-size: 280px;
+    margin-top: 300px;
+}
+#puppy{
+    color: #ffff;
+}
+#day{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    font-size: 280px;
 }
 
-.mainContainer ul li {
-    list-style: none;
-}
-
-.mainContainer .navFirst ul {
-    padding: 0px;
-    margin-left: 35%;
-    margin-right: 35%;
-}
-
-.mainContainer h3 {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 100px;
-    margin-top: 50px;
-}
-
-.mainContainer .navSecond ul {
-    margin: 0px;
-    margin-left: 80px;
-    margin-right: 80px;
-    padding-bottom: 325px;
-}
-.mainContainer .navFirst a {
-    color: #5b5b5b;
-}
-.mainContainer .navSecond a {
-   color: white;
-}
-body .mainContainer {
-    background-image: url(https://jellypetsalon.com/content/images/size/w1000/2023/06/vitalii-khodzinskyi-Hju091vRz_Q-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.mainContainer a {
-    text-decoration-line : none;
+.Main-footer{
+    margin-bottom: 50px;
+    z-index: 1;
 }
