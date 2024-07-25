@@ -1,15 +1,17 @@
 .MainPage{
     max-height: 500vh;
+
 }
-/* .MainPage img{
-    width: 400px;
-    height: 400px;
-} */
+
 #field3{
     object-fit: cover;
     max-height: 1800px;
+    z-index: 1;
 }
-
+.Main-pupday{
+    position: absolute;
+    z-index: 5;  /* Adjust as needed */
+}
 .Main-pupday p {
     font-size: 280px;
     margin-top: 300px;
@@ -24,6 +26,28 @@
 }
 
 .Main-footer{
-    margin-bottom: 50px;
-    z-index: 1;
+    
+    
+}
+
+.main-footer-title{
+    position: fixed;
+    margin-top: 550px;
+    margin-bottom: 100px;
+    font-size: 100px;
+    z-index: 3;
+    offset: 1;
+}
+
+
+
+
+
+
+
+
+.MainAllFooter{
+    position: relative;
+    z-index: 55;
+    offset: 5;
 }
