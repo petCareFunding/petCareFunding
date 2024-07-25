@@ -40,39 +40,15 @@ const Register = () => {
     setUsername(username);
     const usernameRegExp = /^[a-zA-z0-9]{6,12}$/;
  
-    if (!usernameRegExp.test(username)) {
-      setIsUsername(true);
-    } else{
-      setIsUsername(false);
-    }
-   
-
-  
     setUserRealname(userRealname);
-    if (!userRealname) {
-      setIsUserRealname(true);
-    } else {
-      setIsUserRealname(false);
-    }
   
     setPassword(password);
     const passwordRegExp =
       /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
-
-    if (!passwordRegExp.test(password)) {
-      setIsPassword(true);
-    } else {
-      setIsPassword(false);
-    }
+    
   
 
     setConfirmPassword(confirmPassword);
-    if (password !== confirmPassword || !confirmPassword) {
-      setIsConfirmPassword(true);
-    } 
-    else{
-      setIsConfirmPassword(false);
-    }
 
 
     try {
@@ -83,6 +59,27 @@ const Register = () => {
       
     } catch (error) {
       console.error('Registration failed', error);
+      if (!usernameRegExp.test(username)) {
+        setIsUsername(true);
+      } else{
+        setIsUsername(false);
+      }
+      if (!userRealname) {
+        setIsUserRealname(true);
+      } else {
+        setIsUserRealname(false);
+      }
+      if (!passwordRegExp.test(password)) {
+        setIsPassword(true);
+      } else {
+        setIsPassword(false);
+      }
+      if (password !== confirmPassword || !confirmPassword) {
+        setIsConfirmPassword(true);
+      } 
+      else{
+        setIsConfirmPassword(false);
+      }
     }
   };
 
