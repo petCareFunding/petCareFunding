@@ -50,18 +50,13 @@ function MainHeader(){
     return(
         <div className="MainAllFooter">
             <nav className="navFirst">
-                <ul>
-                    <li><a href="/mypage">마이페이지</a></li>
-                    <li><a href="/login">로그인&회원가입</a></li>
-                </ul>
+                    <Link id= 'loginLink' to={"/login"}>로그인&회원가입</Link>
+                    <Link id= 'mypageLink' to={'/mypage'}>마이페이지</Link>             
             </nav>
             <nav className="navSecond">
-                <ul>
-                    <li><a href="/school">유치원 펀딩</a></li>
-                    <li><a href="/products">반려동물 용품 펀딩</a></li>
-                    <li><a href="/funeral">장묘 예약하기</a></li>
-                    <li><a href="/mypage">내 결제내역 & 찜</a></li>
-                </ul>
+                    <Link id= 'schoolLink' to={'/school'}>유치원 펀딩</Link>
+                    <Link id= 'productsLink' to={'/products'}>반려동물 용품 펀딩</Link>
+                    <Link id= 'funeralLink' to={'/funeral'}> 장묘 예약</Link>
             </nav>
         </div>
     )
