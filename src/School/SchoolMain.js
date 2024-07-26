@@ -6,7 +6,8 @@ import SchoolPost from "./SchoolPost.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart as heartIcon } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as emptyheartIcon } from '@fortawesome/free-regular-svg-icons';
-
+import { useParams } from "react-router-dom";
+import schoolMockup from "./SchoolMockup.js";
 
 const saveHeartsToLocalStorage = (hearts) => {
     localStorage.setItem('hearts', JSON.stringify(hearts));
@@ -46,7 +47,7 @@ function SchoolMain(){
         setLikes(newLikes);
     };
 
-
+    const goDetail =(id)=>{navigate(`/school/${id}`);}
     
 
 
@@ -63,16 +64,16 @@ function SchoolMain(){
             </div>
             <hr/>
             <main className="scm-container">
-                {title.map((a,i)=>{
+            {schoolMockup.map((data,i)=>{
                     return(
-                    <div>
-                        <section className="left" key={i}>
-                        <img className="leftphotos" src = {process.env.PUBLIC_URL + './Mschoolphoto'+(i+1)+'.jpg'}></img>
-                        <div className="scm-text-container">
+                    <div key={data.id}>
+                         <section className="left" >
+                            <img className="leftphotos" src ={`Mschoolphoto${data.id}.jpg`}></img>
+                            <div className="scm-text-container">
                             <h4 id="scm-funding-status">펀딩 진행중</h4>
-                            <h2>{title[i]}</h2>
-                            <p id="scm-funding-people-status">펀딩인원<span className="scm-fund scm-People">{people[i]}/20</span></p>
-                            <p id="scm-funding-date-status">펀딩기간<span className="scm-fund scm-Date">{month[i]}월{date[i]}일</span></p>
+                            <h2 onClick={()=>goDetail(data.id)}>{data.name}</h2>
+                            <p id="scm-funding-people-status">펀딩인원<span className="scm-fund scm-People">{data.funding}</span></p>
+                            <p id="scm-funding-date-status">펀딩기간<span className="scm-fund scm-Date">{data.FundingPeriod}</span></p>
                             <p id="scm-heart">💛 현재 {likes[i]}명이 찜했어요!</p>
                             <div className="scm-user-heart">
                                 <span
