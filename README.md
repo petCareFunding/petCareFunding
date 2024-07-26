@@ -37,13 +37,13 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 
 <img src = 'https://github.com/petCareFunding/petCareFunding/blob/main/%EB%A1%9C%EA%B3%A0.jpg' width = '200' height = '200' text-align = 'left'>
 
-- 사이트 제작 동기 : **반려동물과 함께 사는 1인가구 증가**에 따라 20~40대를 타겟으로 반려동물 용품과 유치원 패키지 상품 펀딩시스템과 <br/> 장례 서비스를 함께 제공하여 **케어 중심 편의성 제공**을 목적으로 제작
+- 사이트 제작 동기 : **반려동물과 함께 사는 1인가구 증가**에 따라 20~40대를 타겟으로 반려동물 용품, 유치원 패키지 상품 펀딩시스템과 <br/> 장례 서비스를 함께 제공하여 **케어 중심 편의성 제공**을 목적으로 제작
 
 
 - 제공하는 서비스 :  **반려동물 유치원 펀딩참여 기능 / 반려동물 용품 펀딩참여 기능 / 장묘 예약 서비스 / 펀딩 글 등록 기능**
 
 
-## preview images
+## Preview Images
 
 <디자인 수정 완료 후 추가 예정 ...>
 
