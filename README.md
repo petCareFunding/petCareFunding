@@ -19,11 +19,11 @@ _front_ : <img src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=ht
 
 _back_:  <img src="https://img.shields.io/badge/nodedotjs-5FA04E?style=flat&logo=nodedotjs&logoColor=white"/> <img src="https://img.shields.io/badge/mysql-4479A1?style=flat&logo=mysql&logoColor=white"/>
 
-### `project LINK`
+### `Project LINK`
 
 **sfjisojfckdsjfks**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**아짂 뱁호 않했쓰니 쪽꿈만 긱달렷줏떼요**
 
 
 
