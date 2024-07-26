@@ -8,6 +8,7 @@ import Main from './MainPage/Main';
 import Login from './Login/Login.js';
 import Register from './register/Register.js';
 import SchoolMain from './School/SchoolMain.js';
+import SchoolDetail from './School/SchoolDetail.js';
 import SchoolPost from './School/SchoolPost.js';
 import EditInfo from './Mypage/EditInfo.js';
 import Mypage from './Mypage/Mypage.js';
@@ -67,6 +68,7 @@ function App() {
           <Route path="/ItemsPage" element={<ItemsPage />} />
           <Route path="/ItemsPage/:imageId" element={<ItemDetail />} />
           <Route path='/school' element={<SchoolMain/>}></Route>
+          <Route path='/school/:schoolnum' element={<SchoolDetail />}></Route>
           <Route path='/school/postSchoolFunding' element={<SchoolPost/>}/>
           <Route path="/Mypage/editMyInfo" element={<EditInfo />} />
           <Route path='/Mypage' element={<Mypage />} />
