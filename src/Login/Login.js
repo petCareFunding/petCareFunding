@@ -7,35 +7,42 @@ import axios from 'axios';
 const Login = ({ setToken }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [alert, setAlert] = useState(false);
-  const [alert2, setAlert2] = useState(false);
+  const [usernameMessage, setUsernameMessage] = useState("");
+  const [isUsername, setIsUsername] = useState(false);
+  const [passwordMessage, setPasswordMessage] = useState("");
+  const [isPassword, setIsPassword] = useState(false);
+
   const navigate = useNavigate();
-
-  const alertText = () =>{
-    return alert === false ? 'login-alert' : 'login-alert-view';
-  }
-
-  const alertText2 = () =>{
-    return alert2 === false ? 'login-alert2' : 'login-alert2-view';
-  }
 
 
   const handleLogin = async (e) => {
     e.preventDefault();
+
+    setUsername(username);
+
+    setPassword(password);
+
     try {
       const response = await axios.post('http://localhost:5000/login', { username, password });
       setToken(response.data.token);
       console.log('Login successful');
       navigate('/');
     } catch (error) {
-      if(!username || !password){
-      setAlert(false);
-      setAlert2(true);
+      if (!username) {
+        setUsernameMessage("아이디를 입력해주세요.");
+        setIsUsername(false);
+      } else {
+        setUsernameMessage("");
+        setIsUsername(true);
       }
-      else {
-      setAlert2(false);
-      setAlert(true);
-    }
+      if (!password) {
+        setPasswordMessage("비밀번호를 입력해주세요.");
+        setIsPassword(false);
+      } else {
+        setPasswordMessage("아이디 또는 비밀번호가 틀렸습니다.");
+        setIsPassword(true);
+      }
+    
       console.error('Login failed', error);
     }
   };
@@ -59,13 +66,13 @@ const Login = ({ setToken }) => {
             <input type="text" value={username} placeholder='아이디 또는 이메일' onChange={(e) => 
               setUsername(e.target.value)} className='login-input'/>
           </div>
+          <p className="message">{usernameMessage}</p>
           <label>비밀번호</label>
           <div>
             <input type="password" value={password} placeholder='비밀번호' onChange={(e) => 
               setPassword(e.target.value)} className='login-input'/>
           </div>
-          <div className={alertText()}>아이디 또는 비밀번호가 잘못되었습니다.</div>
-          <div className={alertText2()}>아이디와 비밀번호를 입력해주세요.</div>   
+          <p className="message">{passwordMessage}</p>  
           <button type="submit" className='login-btn'>로그인</button>
         </form>
         <h2>또는</h2>
