@@ -51,15 +51,15 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <div className='loginText'>
-    <nav>
+        <nav>
          
             {!token && <span className='login'><Link to="/login">로그인</Link></span>}
             {!token && <span className='register'><Link to="/register">회원가입</Link></span>}
             {token && <Link to="/mypage">마이페이지</Link>}
             {token && <button onClick={handleLogout}><Link to="/">로그아웃</Link></button>}
         
-    </nav>
-    </div>
+        </nav>
+      </div>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login setToken={setAuthToken} /> }/>
