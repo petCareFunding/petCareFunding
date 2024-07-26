@@ -78,7 +78,7 @@
     width: 71%;
     height: 50px;
     margin-left: 80px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -95,25 +95,11 @@
 .login-btn:hover{
     background-color: #f7df7f;
 }
-.login-alert {
-    display: none;
-}
-.login-alert-view{
-    font-size: 15px;
-    color: rgb(219, 28, 28);
-    margin-top: -20px;
+
+.message{
+    margin-top: -15px;
     margin-left: 80px;
-    margin-bottom: 20px;
-    visibility: visible;
-}
-.login-alert2 {
-    display: none;
-}
-.login-alert2-view{
-    font-size: 15px;
+    margin-bottom: 25px;
     color: rgb(219, 28, 28);
-    margin-top: -20px;
-    margin-left: 80px;
-    margin-bottom: 20px;
-    visibility: visible;
+    font-size: 14px;
 }
