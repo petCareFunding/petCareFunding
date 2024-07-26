@@ -43,3 +43,13 @@
   position: absolute;
   margin-left: 60px;
 }
+.mypageBtn{
+  border: 0;
+  background-color: transparent;
+  font-size: 14px;
+}
+.logoutBtn{
+  border: 0;
+  background-color: transparent;
+  font-size: 14px;
+}
