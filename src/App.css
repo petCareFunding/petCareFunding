@@ -37,11 +37,17 @@
   }
 }
 .loginText{
-  padding-left: 70%;
+  padding-left: 75%;
 }
-.register{
-  position: absolute;
-  margin-left: 60px;
+.loginBtn{
+  border: 0;
+  background-color: transparent;
+  font-size: 14px
+}
+.registerBtn{
+  border: 0;
+  background-color: transparent;
+  font-size: 14px
 }
 .mypageBtn{
   border: 0;
