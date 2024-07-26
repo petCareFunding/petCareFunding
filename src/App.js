@@ -50,7 +50,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      {/* <div className='loginText'>
+      <div className='loginText'>
         <nav>
          
             {!token && <span className='login'><Link to="/login">로그인</Link></span>}
@@ -59,7 +59,7 @@ function App() {
             {token && <button onClick={handleLogout}><Link to="/">로그아웃</Link></button>}
         
         </nav>
-      </div> */}
+      </div>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login setToken={setAuthToken} /> }/>
