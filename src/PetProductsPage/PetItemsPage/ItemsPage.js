@@ -10,7 +10,7 @@ const PetItemspage = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products")
+      .get("http://localhost:5001/products")
       .then((response) => {
         setProducts(response.data);
       })
