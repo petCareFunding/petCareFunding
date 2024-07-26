@@ -98,10 +98,19 @@
     -1px 1px 0 #0000004b,
     1px 1px 0 #0000004a;
 }
+#schoolLink:hover, #ItemsLink:hover, #funeralLink:hover{
+    font-family: 'April2';
+    color: #000000; 
+    cursor: pointer;
+    text-shadow: -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
 
 
 /*푸터 부분 멍고리즘*/
-.main-footer-title{
+#main-footer-title{
     position: fixed;
     margin-top: 550px;
     margin-bottom: 100px;
