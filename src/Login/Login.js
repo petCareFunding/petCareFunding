@@ -65,14 +65,14 @@ const Login = ({ setToken }) => {
           <div>
             <input type="text" value={username} placeholder='아이디 또는 이메일' onChange={(e) => 
               setUsername(e.target.value)} className='login-input'/>
+              <div className="message">{usernameMessage}</div>
           </div>
-          <p className="message">{usernameMessage}</p>
           <label>비밀번호</label>
           <div>
             <input type="password" value={password} placeholder='비밀번호' onChange={(e) => 
               setPassword(e.target.value)} className='login-input'/>
+              <div className="message">{passwordMessage}</div> 
           </div>
-          <p className="message">{passwordMessage}</p>  
           <button type="submit" className='login-btn'>로그인</button>
         </form>
         <h2>또는</h2>
