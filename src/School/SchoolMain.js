@@ -18,6 +18,7 @@ const loadHeartsFromLocalStorage = () => {
     return hearts ? JSON.parse(hearts) : null;
 };
 
+
 function SchoolMain(){
 
     const[title,setTitle] = useState([
