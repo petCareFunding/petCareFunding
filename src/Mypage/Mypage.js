@@ -7,6 +7,7 @@ const navigate = useNavigate();
 const GotoEditMyInfo = ()=>{navigate('/Mypage/editMyInfo')};
   return (
       <main className="main-content">
+        <h1>MEONG-GORITHM</h1>
         <h2>MY PAGE</h2>
         <div className="options">
           <div className="option">
