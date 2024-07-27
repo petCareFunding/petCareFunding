@@ -13,7 +13,7 @@ function Main() {
                     style={{backgroundImage:`url(${process.env.PUBLIC_URL}/Main_img/field3.jpg)`, zIndex:0.5}}
                     offset ={0}
                     speed={0.3}
-                    factor={4}
+                    factor={3}
                     >
                 </ParallaxLayer>
 
@@ -32,11 +32,12 @@ function Main() {
                     <p id="have">Have a </p>
                     <p id="puppy">puppy</p> <span id="day">day!</span>
                 </ParallaxLayer>
+{/* 
+                <footer className="Main-footer" style={{zIndex:20}}>
+                    <MainFooter/>
+                </footer> */}
             </Parallax>
-
-            <footer className="Main-footer" style={{zIndex:15}}>
-                <MainFooter/>
-            </footer>
+        
         </div>
         
     )
@@ -46,8 +47,14 @@ function Main() {
 
 function MainFooter(){
     return(
-        <div className="footer-meong">
+        <div className="footer-meong" style={{ zIndex: 20 }}>
             <p id="main-footer-title">MEONG-GORITHM</p>
+
+            <div className="scrolling-text" style={{zIndex:21}}>
+                <div className="sc-text">
+                    <span>펫 펀딩, 당신의 사랑을 현실로</span>
+                </div>
+            </div>
         </div>
     )
 };

@@ -118,3 +118,37 @@
     z-index: 3;
     offset: 1;
 }
+.footer-meong{
+    background-color: #FFE100;
+    height: 200px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 3;
+}
+
+.scrolling_text {
+    z-index: 21;
+    margin-bottom: 0%;
+    margin-top: 1800px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    background-color: #FFE100;
+    line-height: 60px;
+  }
+
+  .sc-text {
+    font-size: 2.5rem;
+    color: black;
+    animation: animate_text 15s linear infinite; /* The animation property */
+  }
+
+  @keyframes animate_text {
+    from {
+      transform: translate3d(40%, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
