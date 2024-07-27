@@ -21,6 +21,7 @@
 .MainPage{
     max-height: 500vh;
     z-index: 0.2;
+    overflow-x: hidden;
 }
 
 #field3{
@@ -109,46 +110,63 @@
 }
 
 
-/*푸터 부분 멍고리즘*/
+/*헤더 부분 멍고리즘*/
 #main-footer-title{
-    position: fixed;
-    margin-top: 550px;
-    margin-bottom: 100px;
-    font-size: 100px;
-    z-index: 3;
-    offset: 1;
+    font-family: 'April';
+    /* position: fixed; */
+    margin-top: 30px;
+    margin-left: 850px;
+    font-size: 85px;
+    /* z-index: 3; */
 }
-.footer-meong{
-    background-color: #FFE100;
-    height: 200px;
-    margin-top: 0px;
-    position: relative;
-    z-index: 3;
+#main-footer-title2{
+    font-family: 'April';
+    margin-top: 30px;
+    margin-left: 1350px;
+    font-size: 35px;
 }
 
-.scrolling_text {
-    z-index: 21;
-    margin-bottom: 0%;
-    margin-top: 1800px;
+/*-------------------------------------------------------------------------------------------*/
+/* .Main-footer{
+    background-color: #ffffff;
     width: 100%;
+    height: 150px;
+    margin-top: 500px;
+    margin-left: 5px;
+    position: relative;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+} */
+
+.yellow-container {
+    position: relative;
+    height: 60px;
+    color: aqua;
+    bottom: 0;
+    z-index: 21;
+    margin-bottom: 0px;
+    margin-top: 2000px;
+    width: 95%;
     overflow: hidden;
     display: flex;
-    white-space: nowrap;
-    background-color: #FFE100;
-    line-height: 60px;
+    align-items: end;
   }
 
-  .sc-text {
-    font-size: 2.5rem;
+.sc-text {
+    position: absolute;
+    font-family: 'April2';
+    font-size: 100px;   
     color: black;
-    animation: animate_text 15s linear infinite; /* The animation property */
-  }
+    animation: animate_text 20s linear infinite;  
+    padding-bottom: 20px
+}
 
   @keyframes animate_text {
     from {
-      transform: translate3d(40%, 0, 0);
+      transform: translate3d(100%,0,0);
     }
     to {
-      transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%,0,0);
     }
   }
