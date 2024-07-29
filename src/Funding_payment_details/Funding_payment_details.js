@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createElement, useState } from 'react';
 import './Funding_payment_details.css';
 
 const Funding_payment_details = () => {

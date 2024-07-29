@@ -5,6 +5,9 @@ import { useNavigate } from 'react-router-dom';
 const MyPage = () => {
 const navigate = useNavigate();
 const GotoEditMyInfo = ()=>{navigate('/Mypage/editMyInfo')};
+const GotoEditWishlist = ()=>{navigate('/Mypage/Wishlist')};
+const GotoEditWithdraw = ()=>{navigate('/Mypage/Withdraw')};
+const GotoEditFunding_payment_details = ()=>{navigate('/Mypage/Funding_payment_details')};
   return (
       <main className="main-content">
         <h1>MEONG-GORITHM</h1>
@@ -12,11 +15,11 @@ const GotoEditMyInfo = ()=>{navigate('/Mypage/editMyInfo')};
         <div className="options">
           <div className="option">
             <img src="/Mypage_img/funding.png" />
-            <p>펀딩 내역</p>
+            <p onClick={GotoEditFunding_payment_details}>펀딩 내역</p>
           </div>
           <div className="option">
           <img src="/Mypage_img/good.png" />
-            <p>내 찜 목록</p>
+            <p onClick={GotoEditWishlist}>내 찜 목록</p>
           </div>
           <div className="option">
           <img src="/Mypage_img/myimg.png" />
@@ -25,7 +28,8 @@ const GotoEditMyInfo = ()=>{navigate('/Mypage/editMyInfo')};
         </div>
         <div className="actions">
           <button className="logout-btn">로그아웃</button>
-          <button className="quit-btn">탈퇴하기</button>
+          <button className="quit-btn"
+          onClick={GotoEditWithdraw}>탈퇴하기</button>
         </div>
       </main>
   );
