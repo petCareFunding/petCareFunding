@@ -76,10 +76,10 @@ function App() {
           <Route  path="/Funeral" element={<FuneralContainer/>}></Route>
           <Route  path="/FReservation" element={<ReservationContainer/>}></Route>
           <Route path='/PayMentPage/:userid'  element={<OrderItem/>} />
-          <Route path='/Funding_payment_details'  element={<Funding_payment_details/>} />
-          <Route path='/Funding_payment_detailsHeader'  element={<Funding_payment_detailsHeader/>} />
-          <Route path='/Wishlist'  element={<Wishlist/>} />
-          <Route path='/Witdraw'  element={<Withdraw/>} />
+          <Route path='/Mypage/Funding_payment_details'  element={<Funding_payment_details/>} />
+          <Route path='/Mypage/Funding_payment_detailsHeader'  element={<Funding_payment_detailsHeader/>} />
+          <Route path='/Mypage/Wishlist'  element={<Wishlist/>} />
+          <Route path='/Mypage/Withdraw'  element={<Withdraw/>} />
         </Routes>
     </div>
     </BrowserRouter>
