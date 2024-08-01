@@ -17,7 +17,6 @@ import FuneralContainer from './FuneralService/FuneralContainer';
 import ReservationContainer from './FReservationService/ReservationContainer';
 import OrderItem from './PetProductsPage/PayMentPage/OrderItem/OrderItem.js';
 import Funding_payment_details from './Funding_payment_details/Funding_payment_details.js';
-import Funding_payment_detailsHeader from './Funding_payment_details/Header/Header.js';
 import Wishlist from './Wishlist/Wishlist.js';
 import Withdraw from './Withdraw/Withdraw.js';
 
@@ -77,7 +76,6 @@ function App() {
           <Route  path="/FReservation" element={<ReservationContainer/>}></Route>
           <Route path='/PayMentPage/:userid'  element={<OrderItem/>} />
           <Route path='/Mypage/Funding_payment_details'  element={<Funding_payment_details/>} />
-          <Route path='/Mypage/Funding_payment_detailsHeader'  element={<Funding_payment_detailsHeader/>} />
           <Route path='/Mypage/Wishlist'  element={<Wishlist/>} />
           <Route path='/Mypage/Withdraw'  element={<Withdraw/>} />
         </Routes>
