@@ -1,4 +1,4 @@
-# 🐶MEONG-GORITHM PROJECT
+# MEONG-GORITHM PROJECT
 
 클라우드 펀딩 기반 반려동물 케어 서비스
 
@@ -39,8 +39,9 @@ _back_:  <img src="https://img.shields.io/badge/nodedotjs-5FA04E?style=flat&logo
 
 
 ## Preview Images
+![스크린샷 2024-08-02 015144](https://github.com/user-attachments/assets/d83248e8-43c3-40f6-a32f-bd22f8b1b344)
 
-<디자인 수정 완료 후 추가 예정 ...>
+
 
 
 
