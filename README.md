@@ -39,9 +39,33 @@ _back_:  <img src="https://img.shields.io/badge/nodedotjs-5FA04E?style=flat&logo
 
 
 ## Preview Images
+
+
+### 메인페이지
 ![스크린샷 2024-08-02 015144](https://github.com/user-attachments/assets/d83248e8-43c3-40f6-a32f-bd22f8b1b344)
 
 
+### 회원가입 
+![스크린샷 2024-08-02 015223](https://github.com/user-attachments/assets/84cb5571-f07f-401a-b065-700f4b1ba72b)
+
+### 유치원 펀딩 
+![스크린샷 2024-08-02 015330](https://github.com/user-attachments/assets/2f1abd98-e1f6-4339-8186-df7a2822453a)
+
+
+
+### 용품 펀딩 결제 페이지 
+
+![스크린샷 2024-08-02 015506](https://github.com/user-attachments/assets/67fe0895-e0ba-4f27-908c-821d1f605a12)
+
+
+
+### 장례 서비스 페이지
+![스크린샷 2024-08-02 015532](https://github.com/user-attachments/assets/d68464f7-94d3-44f8-a01a-514ebe7e7ad3)
+
+
+
+### 예약 폼
+![스크린샷 2024-08-02 015614](https://github.com/user-attachments/assets/d34e8f9d-b0c4-4a58-8158-7088702ca519)
 
 
 
